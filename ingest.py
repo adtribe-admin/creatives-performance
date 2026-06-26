@@ -64,6 +64,17 @@ DISK_FILES = [
     ("buy-all-caravans", "/Users/ilya/creative-perf-lite/raw/per_ad/buy-all-caravans_120244579499840311.json"),
     ("knewhealth", "/Users/ilya/creative-perf-lite/raw/per_ad/knewhealth_120231495629730355.json"),
     ("photobrick", "/Users/ilya/creative-perf-lite/raw/per_ad/photobrick_120238212431750284.json"),
+    # ----- Batch 5: long-tail brands (top campaign + top ads) -----
+    ("travelzoo", "/Users/ilya/creative-perf-lite/raw/per_ad/travelzoo_120242578372440041.json"),
+    ("travelzoo", "/Users/ilya/creative-perf-lite/raw/per_ad/travelzoo_120245243668980041.json"),
+    ("beaconlight", "/Users/ilya/creative-perf-lite/raw/per_ad/beaconlight_120250498097780404.json"),
+    ("tea-india", "/Users/ilya/creative-perf-lite/raw/per_ad/tea-india_120243984297120647.json"),
+    ("tea-india", "/Users/ilya/creative-perf-lite/raw/per_ad/tea-india_120243984120450647.json"),
+    ("inline-health", "/Users/ilya/creative-perf-lite/raw/per_ad/inline-health_120247375129770526.json"),
+    ("paired-golf", "/Users/ilya/creative-perf-lite/raw/per_ad/paired-golf_120246506422360367.json"),
+    ("westminsters-metals", "/Users/ilya/creative-perf-lite/raw/per_ad/westminsters-metals_120242811386350043.json"),
+    ("planet-splatter", "/Users/ilya/creative-perf-lite/raw/per_ad/planet-splatter_120215552623510354.json"),
+    ("iv-drips", "/Users/ilya/creative-perf-lite/raw/per_ad/iv-drips_120241693251680454.json"),
 ]
 
 
