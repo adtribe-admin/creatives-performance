@@ -191,6 +191,24 @@
 
   footer { margin-top: 32px; color: var(--muted-2); font-size: 12px; }
 
+  /* Pager (table pagination) */
+  .pager {
+    display: flex; align-items: center; gap: 12px; padding: 12px 18px;
+    border-top: 1px solid var(--border); background: var(--panel-2);
+    font-size: 12px; color: var(--muted);
+  }
+  .pager-btn {
+    background: var(--panel); border: 1px solid var(--border-2); color: var(--text);
+    font-family: inherit; font-size: 14px; line-height: 1; padding: 6px 12px;
+    border-radius: 8px; cursor: pointer; min-width: 36px; min-height: 32px;
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  .pager-btn:hover:not(:disabled) { border-color: var(--purple-2); color: var(--lime); }
+  .pager-btn:disabled { opacity: 0.32; cursor: not-allowed; }
+  .pager-status { font-variant-numeric: tabular-nums; }
+  .pager-status span { color: var(--text); font-weight: 500; }
+  .pager-rows-info { margin-left: auto; color: var(--muted-2); }
+
   /* Brand info banner */
   .brand-banner {
     background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px;
@@ -320,464 +338,6 @@
 <div class="kpi"><div class="label">Avg CPA</div><div class="value">$7.03</div><div class="meta">$3,431,343.18 revenue</div></div>
 <div class="kpi accent"><div class="label">Avg ROAS</div><div class="value">3.98x</div><div class="meta">spend-weighted</div></div>
 <div class="kpi"><div class="label">Tests shipped</div><div class="value">3</div><div class="meta">3.4% of creatives · ad_name contains &quot;test&quot;</div></div></div>
-      
-    <div class="panel">
-      <div class="panel-h"><h2>Brands</h2><span class="note">click a row to drill in</span></div>
-      <div class="scroll">
-        <table class="brands-table">
-          <thead><tr>
-            <th>Brand</th><th>Ads</th><th>Spend</th><th>Purch</th><th>Revenue</th>
-            <th>CPA</th><th>ROAS</th><th>Tests</th><th>Window</th>
-          </tr></thead>
-          <tbody>
-        <tr class="brand-row" data-brand="cherieattire">
-          <td><strong>Cherieattire</strong> <span class="muted">act_1596444150772177</span></td>
-          <td>0</td>
-          <td>$225,992.33</td>
-          <td>64</td>
-          <td>$838,025.97</td>
-          <td>$3,531.13</td>
-          <td class="pos">3.71x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="rvezy">
-          <td><strong>Rvezy</strong> <span class="muted">act_10911447</span></td>
-          <td>0</td>
-          <td>$83,817.94</td>
-          <td>752</td>
-          <td>$1,060,142.66</td>
-          <td>$111.46</td>
-          <td class="pos">12.65x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="pet-supplies">
-          <td><strong>Pet Supplies</strong> <span class="muted">act_906109421675456</span></td>
-          <td>0</td>
-          <td>$69,386.92</td>
-          <td>3,002</td>
-          <td>$187,798.12</td>
-          <td>$23.11</td>
-          <td class="pos">2.71x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="holiday-inn-samui">
-          <td><strong>Holiday Inn Samui</strong> <span class="muted">act_853613195991866</span></td>
-          <td>0</td>
-          <td>$51,739.57</td>
-          <td>13</td>
-          <td>$0.00</td>
-          <td>$3,979.97</td>
-          <td class="neu">0.00x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="cameron-hanes">
-          <td><strong>Cameron Hanes</strong> <span class="muted">act_441101408140438</span></td>
-          <td>0</td>
-          <td>$50,162.71</td>
-          <td>1,819</td>
-          <td>$124,859.72</td>
-          <td>$27.58</td>
-          <td class="pos">2.49x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="travelzoo">
-          <td><strong>Travelzoo</strong> <span class="muted">act_1306820756885120</span></td>
-          <td>0</td>
-          <td>$45,015.67</td>
-          <td>14,892</td>
-          <td>$0.00</td>
-          <td>$3.02</td>
-          <td class="neu">0.00x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="brooklynmade">
-          <td><strong>BrooklynMade</strong> <span class="muted">act_3319577708340387</span></td>
-          <td>0</td>
-          <td>$41,193.42</td>
-          <td>767</td>
-          <td>$233,260.63</td>
-          <td>$53.71</td>
-          <td class="pos">5.66x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="dododots">
-          <td><strong>Dododots</strong> <span class="muted">act_1210337971178943</span></td>
-          <td>0</td>
-          <td>$41,193.42</td>
-          <td>767</td>
-          <td>$233,260.63</td>
-          <td>$53.71</td>
-          <td class="pos">5.66x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="wholesale-jewelry">
-          <td><strong>Wholesale Jewelry</strong> <span class="muted">act_718575088777581</span></td>
-          <td>0</td>
-          <td>$41,193.42</td>
-          <td>767</td>
-          <td>$233,260.63</td>
-          <td>$53.71</td>
-          <td class="pos">5.66x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="sophistiplate">
-          <td><strong>Sophistiplate</strong> <span class="muted">act_10150498913280867</span></td>
-          <td>0</td>
-          <td>$37,482.18</td>
-          <td>1,073</td>
-          <td>$90,749.60</td>
-          <td>$34.93</td>
-          <td class="pos">2.42x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="yahmo">
-          <td><strong>Yahmo</strong> <span class="muted">act_10207584714042283</span></td>
-          <td>0</td>
-          <td>$36,647.47</td>
-          <td>884</td>
-          <td>$154,899.84</td>
-          <td>$41.46</td>
-          <td class="pos">4.23x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="xtrema-cookware">
-          <td><strong>Xtrema Cookware</strong> <span class="muted">act_1597243657678825</span></td>
-          <td>43</td>
-          <td>$25,750.05</td>
-          <td>155</td>
-          <td>$46,757.38</td>
-          <td>$166.13</td>
-          <td class="warn">1.82x</td>
-          <td>2</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="dentite">
-          <td><strong>Dentite</strong> <span class="muted">act_834839459305344</span></td>
-          <td>0</td>
-          <td>$15,539.29</td>
-          <td>128</td>
-          <td>$12,824.23</td>
-          <td>$121.40</td>
-          <td class="neg">0.83x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="beautifi">
-          <td><strong>Beautifi</strong> <span class="muted">act_1271180020035555</span></td>
-          <td>0</td>
-          <td>$14,158.89</td>
-          <td>6</td>
-          <td>$0.00</td>
-          <td>$2,359.82</td>
-          <td class="neu">0.00x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="bodyfit">
-          <td><strong>Bodyfit</strong> <span class="muted">act_1106229700657129</span></td>
-          <td>0</td>
-          <td>$11,429.69</td>
-          <td>402</td>
-          <td>$0.00</td>
-          <td>$28.43</td>
-          <td class="neu">0.00x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="buy-all-caravans">
-          <td><strong>Buy All Caravans</strong> <span class="muted">act_234278195398675</span></td>
-          <td>0</td>
-          <td>$9,752.77</td>
-          <td>1,344</td>
-          <td>$0.00</td>
-          <td>$7.26</td>
-          <td class="neu">0.00x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="destinjewelry">
-          <td><strong>DestinJewelry</strong> <span class="muted">act_1142232446879730</span></td>
-          <td>0</td>
-          <td>$7,267.39</td>
-          <td>333</td>
-          <td>$13,495.98</td>
-          <td>$21.82</td>
-          <td class="warn">1.86x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="slumberkins">
-          <td><strong>Slumberkins</strong> <span class="muted">act_1939402463050546</span></td>
-          <td>46</td>
-          <td>$7,132.19</td>
-          <td>239</td>
-          <td>$61,358.91</td>
-          <td>$29.84</td>
-          <td class="pos">8.60x</td>
-          <td>1</td>
-          <td class="muted">Last 30 days</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="knewhealth">
-          <td><strong>KnewHealth</strong> <span class="muted">act_2728439463932325</span></td>
-          <td>0</td>
-          <td>$6,622.46</td>
-          <td>27</td>
-          <td>$0.00</td>
-          <td>$245.28</td>
-          <td class="neu">0.00x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="coppedau">
-          <td><strong>Coppedau</strong> <span class="muted">act_1051064432272863</span></td>
-          <td>0</td>
-          <td>$6,610.16</td>
-          <td>188</td>
-          <td>$57,972.08</td>
-          <td>$35.16</td>
-          <td class="pos">8.77x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="dear-flor">
-          <td><strong>Dear Flor</strong> <span class="muted">act_439344025853640</span></td>
-          <td>0</td>
-          <td>$5,729.03</td>
-          <td>225</td>
-          <td>$12,219.55</td>
-          <td>$25.46</td>
-          <td class="pos">2.13x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="little-beast">
-          <td><strong>Little Beast</strong> <span class="muted">act_210569466485041</span></td>
-          <td>0</td>
-          <td>$4,939.19</td>
-          <td>189</td>
-          <td>$30,245.96</td>
-          <td>$26.13</td>
-          <td class="pos">6.12x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="photobrick">
-          <td><strong>Photobrick</strong> <span class="muted">act_2101793839942342</span></td>
-          <td>0</td>
-          <td>$4,939.19</td>
-          <td>189</td>
-          <td>$30,245.96</td>
-          <td>$26.13</td>
-          <td class="pos">6.12x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="everki">
-          <td><strong>Everki</strong> <span class="muted">act_609932692840832</span></td>
-          <td>0</td>
-          <td>$4,917.59</td>
-          <td>63</td>
-          <td>$12,046.57</td>
-          <td>$78.06</td>
-          <td class="pos">2.45x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="we-can-source-it">
-          <td><strong>We Can Source It</strong> <span class="muted">act_19358219</span></td>
-          <td>0</td>
-          <td>$4,048.77</td>
-          <td>74</td>
-          <td>$8,417.08</td>
-          <td>$54.71</td>
-          <td class="pos">2.08x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="beaconlight">
-          <td><strong>BeaconLight</strong> <span class="muted">act_862675702575747</span></td>
-          <td>0</td>
-          <td>$3,467.81</td>
-          <td>4</td>
-          <td>$3,524.05</td>
-          <td>$866.95</td>
-          <td class="warn">1.02x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="tea-india">
-          <td><strong>Tea India</strong> <span class="muted">act_339455921231910</span></td>
-          <td>0</td>
-          <td>$2,801.79</td>
-          <td>77</td>
-          <td>$1,954.53</td>
-          <td>$36.39</td>
-          <td class="neg">0.70x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="inline-health">
-          <td><strong>Inline Health</strong> <span class="muted">act_569534545469946</span></td>
-          <td>0</td>
-          <td>$2,728.05</td>
-          <td>2</td>
-          <td>$0.00</td>
-          <td>$1,364.03</td>
-          <td class="neu">0.00x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="paired-golf">
-          <td><strong>Paired Golf</strong> <span class="muted">act_687633323819441</span></td>
-          <td>0</td>
-          <td>$1,918.08</td>
-          <td>8</td>
-          <td>$0.00</td>
-          <td>$239.76</td>
-          <td class="neu">0.00x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="westminsters-metals">
-          <td><strong>Westminsters metals</strong> <span class="muted">act_485500910785479</span></td>
-          <td>0</td>
-          <td>$1,478.92</td>
-          <td>1</td>
-          <td>$1,995.00</td>
-          <td>$1,478.92</td>
-          <td class="warn">1.35x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="clubfit-software">
-          <td><strong>Clubfit Software</strong> <span class="muted">act_739503613264875</span></td>
-          <td>0</td>
-          <td>$1,256.90</td>
-          <td>34</td>
-          <td>$0.00</td>
-          <td>$36.97</td>
-          <td class="neu">0.00x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="planet-splatter">
-          <td><strong>Planet Splatter</strong> <span class="muted">act_1337435816869371</span></td>
-          <td>0</td>
-          <td>$1,142.24</td>
-          <td>9</td>
-          <td>$1,678.08</td>
-          <td>$126.92</td>
-          <td class="warn">1.47x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="iv-drips">
-          <td><strong>IV drips</strong> <span class="muted">act_710366211364044</span></td>
-          <td>0</td>
-          <td>$1,058.59</td>
-          <td>4</td>
-          <td>$0.00</td>
-          <td>$264.65</td>
-          <td class="neu">0.00x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="northland-mall">
-          <td><strong>Northland Mall</strong> <span class="muted">act_1520896292952774</span></td>
-          <td>0</td>
-          <td>$811.51</td>
-          <td>94,317</td>
-          <td>$0.00</td>
-          <td>$0.01</td>
-          <td class="neu">0.00x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="amplis-agency">
-          <td><strong>Amplis Agency</strong> <span class="muted">act_1160864529545071</span></td>
-          <td>0</td>
-          <td>$0.00</td>
-          <td>0</td>
-          <td>$0.00</td>
-          <td>$0.00</td>
-          <td class="neu">0.00x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="silkysaws">
-          <td><strong>Silkysaws</strong> <span class="muted">act_512461316805536</span></td>
-          <td>0</td>
-          <td>$0.00</td>
-          <td>0</td>
-          <td>$0.00</td>
-          <td>$0.00</td>
-          <td class="neu">0.00x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        
-        <tr class="brand-row" data-brand="wearenari">
-          <td><strong>WeAreNari</strong> <span class="muted">act_1682903299532884</span></td>
-          <td>0</td>
-          <td>$0.00</td>
-          <td>0</td>
-          <td>$0.00</td>
-          <td>$0.00</td>
-          <td class="neu">0.00x</td>
-          <td>0</td>
-          <td class="muted">Last 30 days (campaign + last-4-weeks rollup)</td>
-        </tr>
-        </tbody>
-        </table>
-      </div>
-    </div>
-    
       <div class="panel">
         <div class="panel-h">
           <h2>All creatives (across brands)</h2>
@@ -2948,6 +2508,14 @@
       </table>
     </div>
     
+        
+    <div class="pager" data-pager-for="table-all">
+      <button type="button" class="pager-btn" data-pager-action="prev" aria-label="Previous page">‹</button>
+      <span class="pager-status">Page <span data-pager-current>1</span> of <span data-pager-total>1</span></span>
+      <button type="button" class="pager-btn" data-pager-action="next" aria-label="Next page">›</button>
+      <span class="pager-rows-info"><span data-pager-shown>0</span> shown</span>
+    </div>
+    
       </div>
       
     <div class="panel">
@@ -3171,37 +2739,6 @@
         <div class="bar-value">2.76x</div>
       </div>
     </div>
-    </div>
-    
-      
-    <div class="panel">
-      <div class="panel-h"><h2>Data quality</h2><span class="note">what's missing, what's duplicated</span></div>
-      <div class="dq-grid">
-        <div class="dq-cell">
-          <h3>Null counts per column</h3>
-          <table><thead><tr><th>Column</th><th>Nulls</th><th>%</th></tr></thead>
-          <tbody><tr><td>ad_name</td><td>0</td><td>0.0%</td></tr><tr><td>creative_id</td><td>89</td><td>100.0%</td></tr><tr><td>creative_name</td><td>89</td><td>100.0%</td></tr><tr><td>thumb_url</td><td>2</td><td>2.2%</td></tr><tr><td>campaign_name</td><td>0</td><td>0.0%</td></tr><tr><td>adset_name</td><td>0</td><td>0.0%</td></tr></tbody></table>
-        </div>
-        <div class="dq-cell">
-          <h3>Duplicate creative_name (top 10)</h3>
-          <table><thead><tr><th>creative_name</th><th>×</th></tr></thead>
-          <tbody><tr><td colspan="2" class="empty-note">No duplicate creative names</td></tr></tbody></table>
-        </div>
-        <div class="dq-cell">
-          <h3>Duplicate ad_name (top 10)</h3>
-          <table><thead><tr><th>ad_name</th><th>×</th></tr></thead>
-          <tbody><tr><td>Single video__education post</td><td>2</td></tr><tr><td>Single image__Clean Ingredients</td><td>2</td></tr><tr><td>PH-PRS-IMG-PROD-UnicornKin-02/09/23 – Copy</td><td>2</td></tr></tbody></table>
-        </div>
-        <div class="dq-cell">
-          <h3>Summary</h3>
-          <table><tbody>
-            <tr><td>Tests shipped</td><td><strong>3</strong> (3.4%)</td></tr>
-            <tr><td>Templated creative_name</td><td>0 (0.0%)</td></tr>
-            <tr><td>Templated by spend</td><td>0.0%</td></tr>
-            <tr><td>Ads with purchases &gt; 0</td><td>45</td></tr>
-          </tbody></table>
-        </div>
-      </div>
     </div>
     
     </div>
@@ -4898,6 +4435,14 @@
       </table>
     </div>
     
+          
+    <div class="pager" data-pager-for="table-xtrema-cookware">
+      <button type="button" class="pager-btn" data-pager-action="prev" aria-label="Previous page">‹</button>
+      <span class="pager-status">Page <span data-pager-current>1</span> of <span data-pager-total>1</span></span>
+      <button type="button" class="pager-btn" data-pager-action="next" aria-label="Next page">›</button>
+      <span class="pager-rows-info"><span data-pager-shown>0</span> shown</span>
+    </div>
+    
         </div>
         
     <div class="panel">
@@ -5121,37 +4666,6 @@
         <div class="bar-value">1.02x</div>
       </div>
     </div>
-    </div>
-    
-        
-    <div class="panel">
-      <div class="panel-h"><h2>Data quality</h2><span class="note">what's missing, what's duplicated</span></div>
-      <div class="dq-grid">
-        <div class="dq-cell">
-          <h3>Null counts per column</h3>
-          <table><thead><tr><th>Column</th><th>Nulls</th><th>%</th></tr></thead>
-          <tbody><tr><td>ad_name</td><td>0</td><td>0.0%</td></tr><tr><td>creative_id</td><td>43</td><td>100.0%</td></tr><tr><td>creative_name</td><td>43</td><td>100.0%</td></tr><tr><td>thumb_url</td><td>1</td><td>2.3%</td></tr><tr><td>campaign_name</td><td>0</td><td>0.0%</td></tr><tr><td>adset_name</td><td>0</td><td>0.0%</td></tr></tbody></table>
-        </div>
-        <div class="dq-cell">
-          <h3>Duplicate creative_name (top 10)</h3>
-          <table><thead><tr><th>creative_name</th><th>×</th></tr></thead>
-          <tbody><tr><td colspan="2" class="empty-note">No duplicate creative names</td></tr></tbody></table>
-        </div>
-        <div class="dq-cell">
-          <h3>Duplicate ad_name (top 10)</h3>
-          <table><thead><tr><th>ad_name</th><th>×</th></tr></thead>
-          <tbody><tr><td>Single video__education post</td><td>2</td></tr><tr><td>Single image__Clean Ingredients</td><td>2</td></tr></tbody></table>
-        </div>
-        <div class="dq-cell">
-          <h3>Summary</h3>
-          <table><tbody>
-            <tr><td>Tests shipped</td><td><strong>2</strong> (4.7%)</td></tr>
-            <tr><td>Templated creative_name</td><td>0 (0.0%)</td></tr>
-            <tr><td>Templated by spend</td><td>0.0%</td></tr>
-            <tr><td>Ads with purchases &gt; 0</td><td>26</td></tr>
-          </tbody></table>
-        </div>
-      </div>
     </div>
     
         
@@ -6553,6 +6067,14 @@
       </table>
     </div>
     
+          
+    <div class="pager" data-pager-for="table-slumberkins">
+      <button type="button" class="pager-btn" data-pager-action="prev" aria-label="Previous page">‹</button>
+      <span class="pager-status">Page <span data-pager-current>1</span> of <span data-pager-total>1</span></span>
+      <button type="button" class="pager-btn" data-pager-action="next" aria-label="Next page">›</button>
+      <span class="pager-rows-info"><span data-pager-shown>0</span> shown</span>
+    </div>
+    
         </div>
         
     <div class="panel">
@@ -6776,37 +6298,6 @@
         <div class="bar-value">0.66x</div>
       </div>
     </div>
-    </div>
-    
-        
-    <div class="panel">
-      <div class="panel-h"><h2>Data quality</h2><span class="note">what's missing, what's duplicated</span></div>
-      <div class="dq-grid">
-        <div class="dq-cell">
-          <h3>Null counts per column</h3>
-          <table><thead><tr><th>Column</th><th>Nulls</th><th>%</th></tr></thead>
-          <tbody><tr><td>ad_name</td><td>0</td><td>0.0%</td></tr><tr><td>creative_id</td><td>46</td><td>100.0%</td></tr><tr><td>creative_name</td><td>46</td><td>100.0%</td></tr><tr><td>thumb_url</td><td>1</td><td>2.2%</td></tr><tr><td>campaign_name</td><td>0</td><td>0.0%</td></tr><tr><td>adset_name</td><td>0</td><td>0.0%</td></tr></tbody></table>
-        </div>
-        <div class="dq-cell">
-          <h3>Duplicate creative_name (top 10)</h3>
-          <table><thead><tr><th>creative_name</th><th>×</th></tr></thead>
-          <tbody><tr><td colspan="2" class="empty-note">No duplicate creative names</td></tr></tbody></table>
-        </div>
-        <div class="dq-cell">
-          <h3>Duplicate ad_name (top 10)</h3>
-          <table><thead><tr><th>ad_name</th><th>×</th></tr></thead>
-          <tbody><tr><td>PH-PRS-IMG-PROD-UnicornKin-02/09/23 – Copy</td><td>2</td></tr></tbody></table>
-        </div>
-        <div class="dq-cell">
-          <h3>Summary</h3>
-          <table><tbody>
-            <tr><td>Tests shipped</td><td><strong>1</strong> (2.2%)</td></tr>
-            <tr><td>Templated creative_name</td><td>0 (0.0%)</td></tr>
-            <tr><td>Templated by spend</td><td>0.0%</td></tr>
-            <tr><td>Ads with purchases &gt; 0</td><td>19</td></tr>
-          </tbody></table>
-        </div>
-      </div>
     </div>
     
         
@@ -7671,10 +7162,6 @@
     </div>
   </div>
 
-  <footer>
-    Source: GoMarble MCP · facebook_get_adaccount_insights (level=ad, last_30d, per-campaign) + facebook_get_ad_creative_details.
-    Cherieattire: act_1596444150772177 · Rvezy: act_10911447 · Pet Supplies: act_906109421675456 · Holiday Inn Samui: act_853613195991866 · Cameron Hanes: act_441101408140438 · Travelzoo: act_1306820756885120 · BrooklynMade: act_3319577708340387 · Dododots: act_1210337971178943 · Wholesale Jewelry: act_718575088777581 · Sophistiplate: act_10150498913280867 · Yahmo: act_10207584714042283 · Xtrema Cookware: act_1597243657678825 · Dentite: act_834839459305344 · Beautifi: act_1271180020035555 · Bodyfit: act_1106229700657129 · Buy All Caravans: act_234278195398675 · DestinJewelry: act_1142232446879730 · Slumberkins: act_1939402463050546 · KnewHealth: act_2728439463932325 · Coppedau: act_1051064432272863 · Dear Flor: act_439344025853640 · Little Beast: act_210569466485041 · Photobrick: act_2101793839942342 · Everki: act_609932692840832 · We Can Source It: act_19358219 · BeaconLight: act_862675702575747 · Tea India: act_339455921231910 · Inline Health: act_569534545469946 · Paired Golf: act_687633323819441 · Westminsters metals: act_485500910785479 · Clubfit Software: act_739503613264875 · Planet Splatter: act_1337435816869371 · IV drips: act_710366211364044 · Northland Mall: act_1520896292952774 · Amplis Agency: act_1160864529545071 · Silkysaws: act_512461316805536 · WeAreNari: act_1682903299532884.
-  </footer>
 </div>
 
 <script>
@@ -7712,33 +7199,91 @@
     }
     return cell.textContent.trim().toLowerCase();
   }
+  // --- Unified table controllers: filter + sort + paginate ---
+  const PAGE_SIZE = 25;
+  const tableControllers = {};
   document.querySelectorAll('table.ads-table').forEach(tbl => {
+    const id = tbl.id;
     const tbody = tbl.tBodies[0];
     const headers = tbl.tHead.rows[0].cells;
-    let current = { idx: -1, asc: false };
-    // Find which column is initially marked sort-desc
+    const allRows = Array.from(tbody.rows);
+    let filtered = allRows.slice();
+    let page = 1;
+    let sortIdx = -1, sortAsc = false;
+    // Find initial sort-desc column from HTML
     for (let i = 0; i < headers.length; i++) {
-      if (headers[i].classList.contains('sort-desc')) { current = { idx: i, asc: false }; break; }
+      if (headers[i].classList.contains('sort-desc')) { sortIdx = i; sortAsc = false; break; }
     }
-    function sortBy(idx, type) {
-      const rows = Array.from(tbody.rows);
-      const asc = current.idx === idx ? !current.asc : false;
-      rows.sort((a, b) => {
-        const va = readCell(a, idx, type);
-        const vb = readCell(b, idx, type);
-        if (va < vb) return asc ? -1 : 1;
-        if (va > vb) return asc ? 1 : -1;
-        return 0;
-      });
-      rows.forEach(r => tbody.appendChild(r));
+
+    function applyFilter(q) {
+      q = (q || '').toLowerCase().trim();
+      filtered = q ? allRows.filter(r => r.textContent.toLowerCase().includes(q)) : allRows.slice();
+      page = 1;
+      applySort();  // re-render
+    }
+    function applySort() {
+      if (sortIdx >= 0) {
+        const type = headers[sortIdx].dataset.type || 'text';
+        filtered.sort((a, b) => {
+          const va = readCell(a, sortIdx, type);
+          const vb = readCell(b, sortIdx, type);
+          if (va < vb) return sortAsc ? -1 : 1;
+          if (va > vb) return sortAsc ? 1 : -1;
+          return 0;
+        });
+      }
       for (let i = 0; i < headers.length; i++) headers[i].classList.remove('sort-asc', 'sort-desc');
-      headers[idx].classList.add(asc ? 'sort-asc' : 'sort-desc');
-      current = { idx, asc };
+      if (sortIdx >= 0) headers[sortIdx].classList.add(sortAsc ? 'sort-asc' : 'sort-desc');
+      render();
     }
+    function render() {
+      const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+      if (page > totalPages) page = totalPages;
+      const start = (page - 1) * PAGE_SIZE;
+      const end = start + PAGE_SIZE;
+      // detach existing rows
+      while (tbody.firstChild) tbody.removeChild(tbody.firstChild);
+      const slice = filtered.slice(start, end);
+      slice.forEach(r => tbody.appendChild(r));
+      // update pager UI
+      const pager = document.querySelector('[data-pager-for="' + id + '"]');
+      if (pager) {
+        pager.querySelector('[data-pager-current]').textContent = page;
+        pager.querySelector('[data-pager-total]').textContent = totalPages;
+        pager.querySelector('[data-pager-shown]').textContent =
+          filtered.length === 0 ? '0 of 0' : (start + 1) + '–' + Math.min(end, filtered.length) + ' of ' + filtered.length;
+        pager.querySelector('[data-pager-action="prev"]').disabled = page <= 1;
+        pager.querySelector('[data-pager-action="next"]').disabled = page >= totalPages;
+      }
+      // update top-of-table count
+      const counter = document.querySelector('[data-count-for="' + id + '"]');
+      if (counter) counter.textContent = filtered.length + (filtered.length === 1 ? ' creative' : ' creatives');
+    }
+
+    // Wire header clicks for sort
     for (let i = 0; i < headers.length; i++) {
-      const type = headers[i].dataset.type || 'text';
-      headers[i].addEventListener('click', () => sortBy(i, type));
+      headers[i].addEventListener('click', () => {
+        sortAsc = (sortIdx === i) ? !sortAsc : false;
+        sortIdx = i;
+        applySort();
+      });
     }
+
+    tableControllers[id] = { applyFilter, gotoPage: (p) => { page = p; render(); }, getPage: () => page, getTotalPages: () => Math.max(1, Math.ceil(filtered.length / PAGE_SIZE)) };
+    render();  // initial render
+  });
+
+  // Wire pager prev/next buttons
+  document.querySelectorAll('.pager').forEach(pager => {
+    const id = pager.dataset.pagerFor;
+    const ctrl = tableControllers[id];
+    if (!ctrl) return;
+    pager.querySelector('[data-pager-action="prev"]').addEventListener('click', () => {
+      if (ctrl.getPage() > 1) ctrl.gotoPage(ctrl.getPage() - 1);
+    });
+    pager.querySelector('[data-pager-action="next"]').addEventListener('click', () => {
+      if (ctrl.getPage() < ctrl.getTotalPages()) ctrl.gotoPage(ctrl.getPage() + 1);
+    });
   });
 
   // --- Creative preview modal ---
@@ -7789,24 +7334,11 @@
   modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
 
-  // --- Search filters ---
+  // --- Search filter inputs (delegate to table controllers) ---
   document.querySelectorAll('.search-input').forEach(input => {
-    const targetId = input.dataset.target;
-    const tbl = document.getElementById(targetId);
-    if (!tbl) return;
-    const counter = document.querySelector('[data-count-for="' + targetId + '"]');
-    const total = tbl.tBodies[0].rows.length;
-    input.addEventListener('input', () => {
-      const q = input.value.toLowerCase().trim();
-      let visible = 0;
-      for (const row of tbl.tBodies[0].rows) {
-        const text = row.textContent.toLowerCase();
-        const match = !q || text.includes(q);
-        row.style.display = match ? '' : 'none';
-        if (match) visible++;
-      }
-      if (counter) counter.textContent = q ? (visible + ' of ' + total + ' creatives') : (total + ' creatives');
-    });
+    const ctrl = tableControllers[input.dataset.target];
+    if (!ctrl) return;
+    input.addEventListener('input', () => ctrl.applyFilter(input.value));
   });
 })();
 </script>

@@ -316,7 +316,19 @@ def render_top_panels(ads, show_brand=False):
     """
 
 
-# ---- DQ panel ----
+# ---- Pager (table pagination controls) ----
+def render_pager(table_id):
+    return f"""
+    <div class="pager" data-pager-for="{table_id}">
+      <button type="button" class="pager-btn" data-pager-action="prev" aria-label="Previous page">‹</button>
+      <span class="pager-status">Page <span data-pager-current>1</span> of <span data-pager-total>1</span></span>
+      <button type="button" class="pager-btn" data-pager-action="next" aria-label="Next page">›</button>
+      <span class="pager-rows-info"><span data-pager-shown>0</span> shown</span>
+    </div>
+    """
+
+
+# ---- DQ panel (kept for parity but no longer rendered) ----
 def render_dq(ads):
     n = len(ads)
     nulls = {
@@ -417,7 +429,6 @@ def render_all_brands_tab():
     return f"""
     <div class="tab-panel active" id="tab-all">
       <div class="kpis">{kpi_row(AGG, f"across {len(BRANDS)} brands")}</div>
-      {render_brands_summary()}
       <div class="panel">
         <div class="panel-h">
           <h2>All creatives (across brands)</h2>
@@ -428,9 +439,9 @@ def render_all_brands_tab():
           <span class="count" data-count-for="table-all">{len(ALL_ADS)} creatives</span>
         </div>
         {render_ads_table(ALL_ADS, "table-all", show_brand=True)}
+        {render_pager("table-all")}
       </div>
       {render_top_panels(ALL_ADS, show_brand=True)}
-      {render_dq(ALL_ADS)}
     </div>
     """
 
@@ -493,9 +504,9 @@ def render_brand_tab(b):
             <span class="count" data-count-for="table-{b['slug']}">{len(b['ads'])} creatives</span>
           </div>
           {render_ads_table(b['ads'], f"table-{b['slug']}", show_brand=False)}
+          {render_pager(f"table-{b['slug']}")}
         </div>
         {render_top_panels(b['ads'], show_brand=False)}
-        {render_dq(b['ads'])}
         """
     else:
         # KPI row from perf totals (no ad_count/test_count/hook/hold)
@@ -749,6 +760,24 @@ HTML = f"""<!DOCTYPE html>
 
   footer {{ margin-top: 32px; color: var(--muted-2); font-size: 12px; }}
 
+  /* Pager (table pagination) */
+  .pager {{
+    display: flex; align-items: center; gap: 12px; padding: 12px 18px;
+    border-top: 1px solid var(--border); background: var(--panel-2);
+    font-size: 12px; color: var(--muted);
+  }}
+  .pager-btn {{
+    background: var(--panel); border: 1px solid var(--border-2); color: var(--text);
+    font-family: inherit; font-size: 14px; line-height: 1; padding: 6px 12px;
+    border-radius: 8px; cursor: pointer; min-width: 36px; min-height: 32px;
+    display: inline-flex; align-items: center; justify-content: center;
+  }}
+  .pager-btn:hover:not(:disabled) {{ border-color: var(--purple-2); color: var(--lime); }}
+  .pager-btn:disabled {{ opacity: 0.32; cursor: not-allowed; }}
+  .pager-status {{ font-variant-numeric: tabular-nums; }}
+  .pager-status span {{ color: var(--text); font-weight: 500; }}
+  .pager-rows-info {{ margin-left: auto; color: var(--muted-2); }}
+
   /* Brand info banner */
   .brand-banner {{
     background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px;
@@ -856,10 +885,6 @@ HTML = f"""<!DOCTYPE html>
     </div>
   </div>
 
-  <footer>
-    Source: GoMarble MCP · facebook_get_adaccount_insights (level=ad, last_30d, per-campaign) + facebook_get_ad_creative_details.
-    {' · '.join(f"{html.escape(b['account']['name'])}: {html.escape(b['account']['id'])}" for b in BRANDS)}.
-  </footer>
 </div>
 
 <script>
@@ -897,33 +922,91 @@ HTML = f"""<!DOCTYPE html>
     }}
     return cell.textContent.trim().toLowerCase();
   }}
+  // --- Unified table controllers: filter + sort + paginate ---
+  const PAGE_SIZE = 25;
+  const tableControllers = {{}};
   document.querySelectorAll('table.ads-table').forEach(tbl => {{
+    const id = tbl.id;
     const tbody = tbl.tBodies[0];
     const headers = tbl.tHead.rows[0].cells;
-    let current = {{ idx: -1, asc: false }};
-    // Find which column is initially marked sort-desc
+    const allRows = Array.from(tbody.rows);
+    let filtered = allRows.slice();
+    let page = 1;
+    let sortIdx = -1, sortAsc = false;
+    // Find initial sort-desc column from HTML
     for (let i = 0; i < headers.length; i++) {{
-      if (headers[i].classList.contains('sort-desc')) {{ current = {{ idx: i, asc: false }}; break; }}
+      if (headers[i].classList.contains('sort-desc')) {{ sortIdx = i; sortAsc = false; break; }}
     }}
-    function sortBy(idx, type) {{
-      const rows = Array.from(tbody.rows);
-      const asc = current.idx === idx ? !current.asc : false;
-      rows.sort((a, b) => {{
-        const va = readCell(a, idx, type);
-        const vb = readCell(b, idx, type);
-        if (va < vb) return asc ? -1 : 1;
-        if (va > vb) return asc ? 1 : -1;
-        return 0;
-      }});
-      rows.forEach(r => tbody.appendChild(r));
+
+    function applyFilter(q) {{
+      q = (q || '').toLowerCase().trim();
+      filtered = q ? allRows.filter(r => r.textContent.toLowerCase().includes(q)) : allRows.slice();
+      page = 1;
+      applySort();  // re-render
+    }}
+    function applySort() {{
+      if (sortIdx >= 0) {{
+        const type = headers[sortIdx].dataset.type || 'text';
+        filtered.sort((a, b) => {{
+          const va = readCell(a, sortIdx, type);
+          const vb = readCell(b, sortIdx, type);
+          if (va < vb) return sortAsc ? -1 : 1;
+          if (va > vb) return sortAsc ? 1 : -1;
+          return 0;
+        }});
+      }}
       for (let i = 0; i < headers.length; i++) headers[i].classList.remove('sort-asc', 'sort-desc');
-      headers[idx].classList.add(asc ? 'sort-asc' : 'sort-desc');
-      current = {{ idx, asc }};
+      if (sortIdx >= 0) headers[sortIdx].classList.add(sortAsc ? 'sort-asc' : 'sort-desc');
+      render();
     }}
+    function render() {{
+      const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+      if (page > totalPages) page = totalPages;
+      const start = (page - 1) * PAGE_SIZE;
+      const end = start + PAGE_SIZE;
+      // detach existing rows
+      while (tbody.firstChild) tbody.removeChild(tbody.firstChild);
+      const slice = filtered.slice(start, end);
+      slice.forEach(r => tbody.appendChild(r));
+      // update pager UI
+      const pager = document.querySelector('[data-pager-for="' + id + '"]');
+      if (pager) {{
+        pager.querySelector('[data-pager-current]').textContent = page;
+        pager.querySelector('[data-pager-total]').textContent = totalPages;
+        pager.querySelector('[data-pager-shown]').textContent =
+          filtered.length === 0 ? '0 of 0' : (start + 1) + '–' + Math.min(end, filtered.length) + ' of ' + filtered.length;
+        pager.querySelector('[data-pager-action="prev"]').disabled = page <= 1;
+        pager.querySelector('[data-pager-action="next"]').disabled = page >= totalPages;
+      }}
+      // update top-of-table count
+      const counter = document.querySelector('[data-count-for="' + id + '"]');
+      if (counter) counter.textContent = filtered.length + (filtered.length === 1 ? ' creative' : ' creatives');
+    }}
+
+    // Wire header clicks for sort
     for (let i = 0; i < headers.length; i++) {{
-      const type = headers[i].dataset.type || 'text';
-      headers[i].addEventListener('click', () => sortBy(i, type));
+      headers[i].addEventListener('click', () => {{
+        sortAsc = (sortIdx === i) ? !sortAsc : false;
+        sortIdx = i;
+        applySort();
+      }});
     }}
+
+    tableControllers[id] = {{ applyFilter, gotoPage: (p) => {{ page = p; render(); }}, getPage: () => page, getTotalPages: () => Math.max(1, Math.ceil(filtered.length / PAGE_SIZE)) }};
+    render();  // initial render
+  }});
+
+  // Wire pager prev/next buttons
+  document.querySelectorAll('.pager').forEach(pager => {{
+    const id = pager.dataset.pagerFor;
+    const ctrl = tableControllers[id];
+    if (!ctrl) return;
+    pager.querySelector('[data-pager-action="prev"]').addEventListener('click', () => {{
+      if (ctrl.getPage() > 1) ctrl.gotoPage(ctrl.getPage() - 1);
+    }});
+    pager.querySelector('[data-pager-action="next"]').addEventListener('click', () => {{
+      if (ctrl.getPage() < ctrl.getTotalPages()) ctrl.gotoPage(ctrl.getPage() + 1);
+    }});
   }});
 
   // --- Creative preview modal ---
@@ -974,24 +1057,11 @@ HTML = f"""<!DOCTYPE html>
   modal.addEventListener('click', e => {{ if (e.target === modal) closeModal(); }});
   document.addEventListener('keydown', e => {{ if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); }});
 
-  // --- Search filters ---
+  // --- Search filter inputs (delegate to table controllers) ---
   document.querySelectorAll('.search-input').forEach(input => {{
-    const targetId = input.dataset.target;
-    const tbl = document.getElementById(targetId);
-    if (!tbl) return;
-    const counter = document.querySelector('[data-count-for="' + targetId + '"]');
-    const total = tbl.tBodies[0].rows.length;
-    input.addEventListener('input', () => {{
-      const q = input.value.toLowerCase().trim();
-      let visible = 0;
-      for (const row of tbl.tBodies[0].rows) {{
-        const text = row.textContent.toLowerCase();
-        const match = !q || text.includes(q);
-        row.style.display = match ? '' : 'none';
-        if (match) visible++;
-      }}
-      if (counter) counter.textContent = q ? (visible + ' of ' + total + ' creatives') : (total + ' creatives');
-    }});
+    const ctrl = tableControllers[input.dataset.target];
+    if (!ctrl) return;
+    input.addEventListener('input', () => ctrl.applyFilter(input.value));
   }});
 }})();
 </script>
