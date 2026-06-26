@@ -23,6 +23,24 @@ DISK_FILES = [
     ("rvezy", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782481923829.txt"),
     ("pet-supplies", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782481943561.txt"),
     ("pet-supplies", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782481949767.txt"),
+    # ----- Batch 2: tool-saved big responses -----
+    ("cameron-hanes", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782482668561.txt"),
+    ("sophistiplate", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782482681473.txt"),
+    ("sophistiplate", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782482687697.txt"),
+    ("sophistiplate", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782482691691.txt"),
+    ("yahmo", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782482702134.txt"),
+    ("yahmo", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782482709690.txt"),
+    # ----- Batch 2: inline responses written to raw/per_ad/ -----
+    ("cameron-hanes", "/Users/ilya/creative-perf-lite/raw/per_ad/cameron-hanes_120251149922270348.json"),
+    ("cameron-hanes", "/Users/ilya/creative-perf-lite/raw/per_ad/cameron-hanes_120232027180000348.json"),
+    ("cameron-hanes", "/Users/ilya/creative-perf-lite/raw/per_ad/cameron-hanes_120252345513870348.json"),
+    ("sophistiplate", "/Users/ilya/creative-perf-lite/raw/per_ad/sophistiplate_6542929634294.json"),
+    ("sophistiplate", "/Users/ilya/creative-perf-lite/raw/per_ad/sophistiplate_6919434762294.json"),
+    ("sophistiplate", "/Users/ilya/creative-perf-lite/raw/per_ad/sophistiplate_6955449199294.json"),
+    ("yahmo", "/Users/ilya/creative-perf-lite/raw/per_ad/yahmo_120246201644110774.json"),
+    ("yahmo", "/Users/ilya/creative-perf-lite/raw/per_ad/yahmo_120246217885220774.json"),
+    ("yahmo", "/Users/ilya/creative-perf-lite/raw/per_ad/yahmo_120243302861720774.json"),
+    ("yahmo", "/Users/ilya/creative-perf-lite/raw/per_ad/yahmo_120233906545900774.json"),
 ]
 
 
