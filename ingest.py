@@ -53,6 +53,17 @@ DISK_FILES = [
     ("wholesale-jewelry", "/Users/ilya/creative-perf-lite/raw/per_ad/wholesale-jewelry_120245983684890594.json"),
     ("wholesale-jewelry", "/Users/ilya/creative-perf-lite/raw/per_ad/wholesale-jewelry_120245989881620594.json"),
     ("wholesale-jewelry", "/Users/ilya/creative-perf-lite/raw/per_ad/wholesale-jewelry_120232531997620594.json"),
+    # ----- Batch 4: mid-spend brands (top campaign each) -----
+    ("dentite", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782483683764.txt"),
+    ("bodyfit", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782483708648.txt"),
+    ("destinjewelry", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782483718685.txt"),
+    ("coppedau", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782483727443.txt"),
+    ("dear-flor", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782483733020.txt"),
+    ("everki", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782483741039.txt"),
+    ("beautifi", "/Users/ilya/creative-perf-lite/raw/per_ad/beautifi_120240574479230604.json"),
+    ("buy-all-caravans", "/Users/ilya/creative-perf-lite/raw/per_ad/buy-all-caravans_120244579499840311.json"),
+    ("knewhealth", "/Users/ilya/creative-perf-lite/raw/per_ad/knewhealth_120231495629730355.json"),
+    ("photobrick", "/Users/ilya/creative-perf-lite/raw/per_ad/photobrick_120238212431750284.json"),
 ]
 
 
