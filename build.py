@@ -1050,8 +1050,10 @@ HTML = f"""<!DOCTYPE html>
     modalMedia.innerHTML = '';  // stops any playing video
     document.body.style.overflow = '';
   }}
-  document.querySelectorAll('.thumb-btn').forEach(btn => {{
-    btn.addEventListener('click', () => openModal(btn));
+  // Event-delegated thumb click — works for rows added via pagination too
+  document.addEventListener('click', e => {{
+    const btn = e.target.closest && e.target.closest('.thumb-btn');
+    if (btn) openModal(btn);
   }});
   document.getElementById('modal-close').addEventListener('click', closeModal);
   modal.addEventListener('click', e => {{ if (e.target === modal) closeModal(); }});
