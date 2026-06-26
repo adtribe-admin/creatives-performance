@@ -526,13 +526,6 @@ def render_brand_tab(b):
           </div>
           {render_campaigns_table(b['campaigns'], f"table-{b['slug']}", b['campaign_count_total'])}
         </div>
-        <div class="panel">
-          <div class="panel-h"><h2>Per-creative data</h2><span class="note">pending</span></div>
-          <div class="empty-note" style="padding: 24px;">
-            Per-ad creative metrics (thumbnails, hook/hold rate, test status) populate via the scheduled Monday refresh agent.
-            Once that runs, this brand will show the same creative table as Slumberkins / Xtrema.
-          </div>
-        </div>
         """
     return f"""
     <div class="tab-panel" id="tab-{b['slug']}">
