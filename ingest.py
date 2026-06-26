@@ -41,6 +41,18 @@ DISK_FILES = [
     ("yahmo", "/Users/ilya/creative-perf-lite/raw/per_ad/yahmo_120246217885220774.json"),
     ("yahmo", "/Users/ilya/creative-perf-lite/raw/per_ad/yahmo_120243302861720774.json"),
     ("yahmo", "/Users/ilya/creative-perf-lite/raw/per_ad/yahmo_120233906545900774.json"),
+    # ----- Batch 3: BrooklynMade, Dododots, Wholesale Jewelry -----
+    ("brooklynmade", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782483384647.txt"),
+    ("dododots", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782483392466.txt"),
+    ("wholesale-jewelry", "/Users/ilya/.claude/projects/-Users-ilya/72234306-b770-475b-b8e7-be3e6e27eb98/tool-results/mcp-41eb6bcb-8fcd-4a36-99a2-0db123a599b5-facebook_get_adaccount_insights-1782483405955.txt"),
+    ("dododots", "/Users/ilya/creative-perf-lite/raw/per_ad/dododots_52517144762154.json"),
+    ("dododots", "/Users/ilya/creative-perf-lite/raw/per_ad/dododots_6949988556750.json"),
+    ("dododots", "/Users/ilya/creative-perf-lite/raw/per_ad/dododots_52530441890354.json"),
+    ("dododots", "/Users/ilya/creative-perf-lite/raw/per_ad/dododots_6953350353150.json"),
+    ("wholesale-jewelry", "/Users/ilya/creative-perf-lite/raw/per_ad/wholesale-jewelry_120216318340260594.json"),
+    ("wholesale-jewelry", "/Users/ilya/creative-perf-lite/raw/per_ad/wholesale-jewelry_120245983684890594.json"),
+    ("wholesale-jewelry", "/Users/ilya/creative-perf-lite/raw/per_ad/wholesale-jewelry_120245989881620594.json"),
+    ("wholesale-jewelry", "/Users/ilya/creative-perf-lite/raw/per_ad/wholesale-jewelry_120232531997620594.json"),
 ]
 
 
