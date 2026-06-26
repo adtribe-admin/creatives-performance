@@ -1,0 +1,61 @@
+{
+  "account": {
+    "id": "act_1142232446879730",
+    "name": "DestinJewelry"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Diana Yaryha",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "ROAS",
+    "target_value": 2,
+    "budget": 7000,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 7267.39,
+    "total_revenue": 13495.98,
+    "total_purchases": 333,
+    "avg_cpa": 21.82,
+    "avg_roas": 1.8571,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120232328451130746",
+      "name": "US | Prospecting | Conversions | ABO",
+      "spend": 7388.67
+    },
+    {
+      "id": "120219173275580746",
+      "name": "US | Remarketing | Conversions | ABO",
+      "spend": 141.3
+    },
+    {
+      "id": "120253318656450746",
+      "name": "US | Summer Sale | Conversions | ABO",
+      "spend": 69.17
+    },
+    {
+      "id": "120254648036540746",
+      "name": "Instagram post: She's booked, busy, and somewhere...",
+      "spend": 62.64
+    }
+  ],
+  "campaign_count_total": 4,
+  "campaign_error": null,
+  "ads": []
+}

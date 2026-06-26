@@ -1,0 +1,66 @@
+{
+  "account": {
+    "id": "act_569534545469946",
+    "name": "Inline Health"
+  },
+  "meta": {
+    "tab": "leadgen",
+    "media_buyer": "Alexandra Bek",
+    "pod_leader": "Anastasia Hryhorieva",
+    "target_type": "CPL",
+    "target_value": 10,
+    "budget": 3000,
+    "currency": "NZD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 2728.05,
+    "total_revenue": 0,
+    "total_purchases": 2,
+    "avg_cpa": 1364.03,
+    "avg_roas": 0.0,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120247375129770526",
+      "name": "Prospecting | Wellington | ABO",
+      "spend": 417.23
+    },
+    {
+      "id": "120248512420020526",
+      "name": "Prospecting | Tauranga | ABO",
+      "spend": 296.55
+    },
+    {
+      "id": "120248848914820526",
+      "name": "Prospecting | Whangaparaoa | ABO",
+      "spend": 193.46
+    },
+    {
+      "id": "120248848080740526",
+      "name": "Prospecting | Christchurch | ABO",
+      "spend": 162.98
+    },
+    {
+      "id": "120238934514690526",
+      "name": "Nationwide Nov25, traffic",
+      "spend": 150.27
+    }
+  ],
+  "campaign_count_total": 5,
+  "campaign_error": null,
+  "ads": []
+}

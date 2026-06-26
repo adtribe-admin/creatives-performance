@@ -1,0 +1,61 @@
+{
+  "account": {
+    "id": "act_1337435816869371",
+    "name": "Planet Splatter"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Alina Zherebetska",
+    "pod_leader": "Anastasia Hryhorieva",
+    "target_type": "ROAS",
+    "target_value": 7.88,
+    "budget": 1400,
+    "currency": "CAD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 1142.24,
+    "total_revenue": 1678.08,
+    "total_purchases": 9,
+    "avg_cpa": 126.92,
+    "avg_roas": 1.4691,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120215552623510354",
+      "name": "Level 2 | Retargeting | CBO",
+      "spend": 630.96
+    },
+    {
+      "id": "120229870605930354",
+      "name": "Level 1 | LEADS | Birthday | CBO",
+      "spend": 295.48
+    },
+    {
+      "id": "120247963420870354",
+      "name": "Lead Gen | Camps 2026",
+      "spend": 212.45
+    },
+    {
+      "id": "120248648945340354",
+      "name": "A+SC | FIFA 2026",
+      "spend": 115.22
+    }
+  ],
+  "campaign_count_total": 4,
+  "campaign_error": null,
+  "ads": []
+}

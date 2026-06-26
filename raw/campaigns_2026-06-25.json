@@ -1,0 +1,203 @@
+{
+  "pull_date": "2026-06-25",
+  "date_range": {"since": "2026-05-27", "until": "2026-06-25"},
+  "note": "Campaign lists for 35 of 37 Meta accounts. WeAreNari (act_1682903299532884) and Xtrema (act_1597243657678825) returned permission-denied — transient.",
+  "accounts": {
+    "act_1160864529545071": {"name": "Amplis Agency", "campaigns": [
+      {"id": "52587702174868", "name": "AMPLIS - Traffic", "spend": 394.62},
+      {"id": "52598645078068", "name": "Amplis - Dart Campaign - Email ALL", "spend": 23.03}
+    ]},
+    "act_862675702575747": {"name": "BeaconLight", "campaigns": [
+      {"id": "120250498097780404", "name": "New website | PSP | Adv+", "spend": 3349.90},
+      {"id": "120244807726760404", "name": "Prospecting | Conversions | CBO | Families", "spend": 594.89}
+    ]},
+    "act_1271180020035555": {"name": "Beautifi", "campaigns": [
+      {"id": "120240574479230604", "name": "Prospecting | Ontario,Alberta,BC | Rhinoplasty/General/BA | Submit App | 02.2026", "spend": 8096.14},
+      {"id": "120248152137870604", "name": "Prospecting | ON,BC,AB | Multi-Procedure | Submit App | 06.2026", "spend": 3774.27},
+      {"id": "120243112645860604", "name": "Prospecting | Quebec | Rhinoplasty/General/BA | Qualified Lead | 03.2026", "spend": 2196.02},
+      {"id": "120244503788650604", "name": "Marketplace | Dr. Dreckmann | Richmond Hill | Meta | Approval | 04.2026", "spend": 206.06},
+      {"id": "120243315513640604", "name": "Marketplace | Dr. Sardiwalla | Alberta | Meta | Submit App | 04.2026", "spend": 195.75},
+      {"id": "120222197802040604", "name": "Rhinoplasty | Ontario | Meta | Submit App campaign", "spend": 105.28}
+    ]},
+    "act_1106229700657129": {"name": "Bodyfit", "campaigns": [
+      {"id": "120210906869840332", "name": "LEADS", "spend": 12238.19}
+    ]},
+    "act_3319577708340387": {"name": "BrooklynMade", "campaigns": [
+      {"id": "120236942167280498", "name": "USA | Prospecting | ABO", "spend": 4814.51}
+    ]},
+    "act_234278195398675": {"name": "Buy All Caravans", "campaigns": [
+      {"id": "120244579499840311", "name": "Prospecting | ABO | Caravans & Motorhomes", "spend": 5653.92},
+      {"id": "120218693414240311", "name": "New Leads campaign-too many statics", "spend": 1781.44},
+      {"id": "120215014884700311", "name": "New Leads campaign-current", "spend": 1488.43},
+      {"id": "120241125451510311", "name": "Motorhome Buying | Grand Slam Offer Test", "spend": 1486.61}
+    ]},
+    "act_441101408140438": {"name": "Cameron Hanes", "campaigns": [
+      {"id": "120215398350520348", "name": "CE_US_TOF_ABO_ASC_20250401", "spend": 22764.22},
+      {"id": "120251149922270348", "name": "CE_US_CBO_ASC_2026BentleyGiveaway_20260520", "spend": 17292.29},
+      {"id": "120232027180000348", "name": "CE_US_TOF_CBO_Catalog_20250610", "spend": 13287.21},
+      {"id": "120252345513870348", "name": "CE_US_CBO_ASC_2026RolexGiveaway_20260610", "spend": 3133.60}
+    ]},
+    "act_1596444150772177": {"name": "Cherieattire", "campaigns": [
+      {"id": "120239138316520413", "name": "US/AU | Prospecting | Conversions", "spend": 162221.37},
+      {"id": "120238899887740413", "name": "US/AU | RM | Conversions", "spend": 45163.03},
+      {"id": "120245063568930413", "name": "UK/CA | Prospecting | Conversions", "spend": 23174.36},
+      {"id": "120245531125490413", "name": "UK/CA/US/AU Engagement", "spend": 6638.11}
+    ]},
+    "act_739503613264875": {"name": "Clubfit Software", "campaigns": [
+      {"id": "120202388369030210", "name": "Level 1 | A+ Shopping | Cold Prospecting | Conv | Cost cap CBO", "spend": 1193.70},
+      {"id": "120215402008920210", "name": "Level 2 | Reprospecting audience | Purchase goal test", "spend": 150.42}
+    ]},
+    "act_1051064432272863": {"name": "Coppedau", "campaigns": [
+      {"id": "120239428559280618", "name": "Ai Ads + Catalogue", "spend": 5440.44},
+      {"id": "120238226450470618", "name": "Level 1 | Catalogue", "spend": 2050.59}
+    ]},
+    "act_439344025853640": {"name": "Dear Flor", "campaigns": [
+      {"id": "120224831130830520", "name": "SLTC | Prospecting | Conversion", "spend": 4670.64},
+      {"id": "120226051899710520", "name": "SLTC | Retargeting | Warm Audiences | Conversion", "spend": 724.05},
+      {"id": "120246700245120520", "name": "SLTC | Awareness", "spend": 440.41}
+    ]},
+    "act_834839459305344": {"name": "Dentite", "campaigns": [
+      {"id": "120246424224460131", "name": "Dentite | A+ | 2026 Campaign", "spend": 11500.45},
+      {"id": "120248779424860131", "name": "Dentite | Remarketing", "spend": 3880.86},
+      {"id": "120241721362480131", "name": "Dentite | A+ | TOF | BOGO | USA | MF Pixel | DO AC | 15.01.", "spend": 496.15}
+    ]},
+    "act_1142232446879730": {"name": "DestinJewelry", "campaigns": [
+      {"id": "120232328451130746", "name": "US | Prospecting | Conversions | ABO", "spend": 7388.67},
+      {"id": "120219173275580746", "name": "US | Remarketing | Conversions | ABO", "spend": 141.30},
+      {"id": "120253318656450746", "name": "US | Summer Sale | Conversions | ABO", "spend": 69.17},
+      {"id": "120254648036540746", "name": "Instagram post: She's booked, busy, and somewhere...", "spend": 62.64}
+    ]},
+    "act_1210337971178943": {"name": "Dododots", "campaigns": [
+      {"id": "52517144762154", "name": "Prospecting | ASC+", "spend": 509.23},
+      {"id": "6985359577950", "name": "US - Test - 7/5/2026", "spend": 472.22},
+      {"id": "6949988556750", "name": "US - TF - AMZ - 3/3/2026", "spend": 353.31},
+      {"id": "52530441890354", "name": "Retargeting | CBO+", "spend": 30.23},
+      {"id": "6953350353150", "name": "US - Conv - ATC - Video - UGC (Caucasian)", "spend": 24.67}
+    ]},
+    "act_609932692840832": {"name": "Everki", "campaigns": [
+      {"id": "120243650179720481", "name": "mmg-Everki-sales-prospecting-creative testing", "spend": 3766.37},
+      {"id": "120247488163180481", "name": "mmg-Everki-sales-prospecting-catalog", "spend": 738.30},
+      {"id": "120245160246560481", "name": "mmg-Everki-sales-retargeting", "spend": 676.85},
+      {"id": "120236902923760481", "name": "Everki-awareness-boosted posts", "spend": 92.32},
+      {"id": "120249266698580481", "name": "mmg-Everki-prime day 2026", "spend": 92.18}
+    ]},
+    "act_853613195991866": {"name": "Holiday Inn Samui", "campaigns": [
+      {"id": "120243494299390071", "name": "Prospecting | Conv | ABO | All Countries | Family Offers", "spend": 10319.22},
+      {"id": "120204622669070071", "name": "Prospecting | Conv | ABO | All Countries | Stay long pay less", "spend": 10231.47},
+      {"id": "120201570552160071", "name": "Prospecting | Conv | ABO | Evergreen | All countries", "spend": 8513.90},
+      {"id": "120247180591420071", "name": "Prospecting | Conv | ABO | All Countries | IHG June 9 2026", "spend": 6054.33},
+      {"id": "120229744341070071", "name": "Prospecting | Conv | ABO | All Countries | Kids Eat Free", "spend": 5098.03},
+      {"id": "120243897106380071", "name": "Traffic | Google Form | Family Daily Pass", "spend": 3720.51},
+      {"id": "120241420718620071", "name": "Messages | Circus Night Event", "spend": 2937.89},
+      {"id": "120201632435700071", "name": "Brand Awareness | CBO | All countries", "spend": 2890.49},
+      {"id": "120242586437240071", "name": "Traffic | Google Form | Birthday in Samui", "spend": 2876.38},
+      {"id": "120201575625770071", "name": "Re-engagement | Conversions | ABO", "spend": 1738.27}
+    ]},
+    "act_710366211364044": {"name": "IV drips", "campaigns": [
+      {"id": "120241693251680454", "name": "USA | Remarketing | Home page", "spend": 1212.00}
+    ]},
+    "act_569534545469946": {"name": "Inline Health", "note": "21 small geo-targeted campaigns, top 5 listed", "campaigns": [
+      {"id": "120247375129770526", "name": "Prospecting | Wellington | ABO", "spend": 417.23},
+      {"id": "120248512420020526", "name": "Prospecting | Tauranga | ABO", "spend": 296.55},
+      {"id": "120248848914820526", "name": "Prospecting | Whangaparaoa | ABO", "spend": 193.46},
+      {"id": "120248848080740526", "name": "Prospecting | Christchurch | ABO", "spend": 162.98},
+      {"id": "120238934514690526", "name": "Nationwide Nov25, traffic", "spend": 150.27}
+    ]},
+    "act_2728439463932325": {"name": "KnewHealth", "campaigns": [
+      {"id": "120231495629730355", "name": "KH_Facebook_Leads_Prospecting", "spend": 5763.20},
+      {"id": "120216286350470355", "name": "KH_Facebook_Leads_Remarketing", "spend": 1469.50}
+    ]},
+    "act_210569466485041": {"name": "Little Beast", "campaigns": [
+      {"id": "23857832156990101", "name": "ADV+ | MIX Campaign", "spend": 987.61},
+      {"id": "120250726432920102", "name": "ADV+ | SS Stripes", "spend": 981.01},
+      {"id": "120246274076690102", "name": "ADV+ | Carrier Restock Lifestyle", "spend": 847.64},
+      {"id": "120243952663420102", "name": "Retargeting Only Audience | Mix | VoC", "spend": 739.38},
+      {"id": "120245813984480102", "name": "ADV+ | Evergreen SALE Campaign | VoC", "spend": 730.30}
+    ]},
+    "act_1520896292952774": {"name": "Northland Mall", "campaigns": [
+      {"id": "120246889691250327", "name": "Northland | Prospecting | 2026-06", "spend": 1156.93}
+    ]},
+    "act_687633323819441": {"name": "Paired Golf", "campaigns": [
+      {"id": "120246506422360367", "name": "PSP_B2B_Newsletter_ABO", "spend": 862.54},
+      {"id": "120245713888750367", "name": "RET_B2B_CallBookings_ABO", "spend": 383.30},
+      {"id": "120245261437640367", "name": "CT_Android_PSP_BidCap$8_FL,SC,GA_CBO", "spend": 292.68},
+      {"id": "120245254985520367", "name": "CT_Android_PSP_FL,SC,GA_CBO_Installs", "spend": 195.10}
+    ]},
+    "act_906109421675456": {"name": "Pet Supplies", "campaigns": [
+      {"id": "120227846028000650", "name": "Conquesting", "spend": 37136.31},
+      {"id": "120243255484120650", "name": "Prospecting Sales Campaign | ADV+", "spend": 32715.54}
+    ]},
+    "act_2101793839942342": {"name": "Photobrick", "campaigns": [
+      {"id": "120238212431750284", "name": "AU | Website Conversions", "spend": 1124.19},
+      {"id": "120243392168250284", "name": "SA | Website Conversions", "spend": 615.31},
+      {"id": "120238213221760284", "name": "UAE | Website Conversions", "spend": 378.44}
+    ]},
+    "act_1337435816869371": {"name": "Planet Splatter", "campaigns": [
+      {"id": "120215552623510354", "name": "Level 2 | Retargeting | CBO", "spend": 630.96},
+      {"id": "120229870605930354", "name": "Level 1 | LEADS | Birthday | CBO", "spend": 295.48},
+      {"id": "120247963420870354", "name": "Lead Gen | Camps 2026", "spend": 212.45},
+      {"id": "120248648945340354", "name": "A+SC | FIFA 2026", "spend": 115.22}
+    ]},
+    "act_10911447": {"name": "Rvezy", "campaigns": [
+      {"id": "6911782220862", "name": "FACEBOOK+CAN+Owner+National", "spend": 55705.08},
+      {"id": "6868593589662", "name": "FACEBOOK+CAN+Owner+4-Locations+2026", "spend": 16302.49},
+      {"id": "6944567544462", "name": "FACEBOOK+CAN+Renter+Prospecting+Conv+June-2026", "spend": 9144.92},
+      {"id": "6856071894462", "name": "FACEBOOK+CAN+Renter+Retargeting+Sales+May+2025", "spend": 5977.82},
+      {"id": "6553447348262", "name": "FACEBOOK+CAn+Renter+APP+iOS14+Prospecting-Jan2026", "spend": 3009.69}
+    ]},
+    "act_512461316805536": {"name": "Silkysaws", "campaigns": []},
+    "act_1939402463050546": {"name": "Slumberkins", "campaigns": [
+      {"id": "120235968232540256", "name": "PH | PRS | Creature Full of Feelings", "spend": 2946.26},
+      {"id": "120244725358790256", "name": "PRS | Flip Out Testing", "spend": 2701.56},
+      {"id": "120244149688310256", "name": "PRS | Mixed Creatures Testing", "spend": 1126.59},
+      {"id": "120231573215710256", "name": "PH | RTG | August 19, 2025", "spend": 629.68},
+      {"id": "120246125603750256", "name": "PRS | Unicorn Testing", "spend": 283.77}
+    ]},
+    "act_10150498913280867": {"name": "Sophistiplate", "campaigns": [
+      {"id": "6930257143294", "name": "CE_7dc1de_US_CBO_TOF+MOF_Sophistiplate_Seasonal_20260529", "spend": 12788.34},
+      {"id": "6542929634294", "name": "CE_US_MOF+BOF_ABO_Catalog_20260216", "spend": 8057.40},
+      {"id": "6941096528694", "name": "CE_7dc1de_US_CBO_TOF+MOF_Sophistiplate_Evergreen_20260529", "spend": 6454.74},
+      {"id": "6873474420094", "name": "CE_US_CBO_TOF+MOF_Sophistiplate_Evergreen_02242026", "spend": 5732.56},
+      {"id": "6919434762294", "name": "CE_US_CBO_TOF+MOF_Boards_Evergreen_18052026", "spend": 5038.50},
+      {"id": "6955449199294", "name": "CE_7dc1de_US_CBO_TOF+MOF_Boards_Evergreen_18052026", "spend": 1192.46}
+    ]},
+    "act_339455921231910": {"name": "Tea India", "campaigns": [
+      {"id": "120243984297120647", "name": "mmg-tea india-sales-retargeting", "spend": 1412.75},
+      {"id": "120243984120450647", "name": "mmg-tea india-prospecting-creative testing", "spend": 1330.64},
+      {"id": "120242654640820647", "name": "tea india-awareness-daily budget", "spend": 166.56},
+      {"id": "120247725929530647", "name": "mmg-tea india-sales-prime day 2026", "spend": 138.80}
+    ]},
+    "act_1306820756885120": {"name": "Travelzoo", "note": "40+ campaigns, top 5 listed", "campaigns": [
+      {"id": "120242578372440041", "name": "Evergreen - 4th April", "spend": 5991.43},
+      {"id": "120245243668980041", "name": "67-nt Sydney to London 'Queen Anne' Package", "spend": 5638.92},
+      {"id": "120241947404840041", "name": "Evergreen - 26th March", "spend": 4481.64},
+      {"id": "120241438456880041", "name": "Evergreen - 15th March", "spend": 4394.01},
+      {"id": "120245431666750041", "name": "7-nts in 5 Star Thailand Resort", "spend": 4374.36}
+    ]},
+    "act_19358219": {"name": "We Can Source It", "campaigns": [
+      {"id": "6988305182111", "name": "Testing | Audiences | ABO", "spend": 3388.35},
+      {"id": "52509933124715", "name": "BOFU | Retargeting | ABO", "spend": 887.61}
+    ]},
+    "act_1682903299532884": {"name": "WeAreNari", "error": "permission denied (transient)", "campaigns": []},
+    "act_485500910785479": {"name": "Westminsters metals", "campaigns": [
+      {"id": "120242811386350043", "name": "Prospecting", "spend": 1518.85},
+      {"id": "120247924082330043", "name": "Prospecting | 1g Valcambi Gold Bar + 2026 $5 Gold Eagle", "spend": 271.52}
+    ]},
+    "act_718575088777581": {"name": "Wholesale Jewelry", "campaigns": [
+      {"id": "120224989727000594", "name": "ASC+ | Campaign | Static", "spend": 15884.71},
+      {"id": "120216318340260594", "name": "ASC+ | Trends 2026", "spend": 11328.57},
+      {"id": "120245983684890594", "name": "ASC+ | Body Jewelry Catalog", "spend": 3079.65},
+      {"id": "120245989881620594", "name": "ASC+ | Summer collection 2026", "spend": 2809.60},
+      {"id": "120232531997620594", "name": "ASC+ | New arrivals | Reeng and RET", "spend": 1962.92}
+    ]},
+    "act_1597243657678825": {"name": "Xtrema Cookware", "error": "permission denied (transient)", "campaigns": []},
+    "act_10207584714042283": {"name": "Yahmo", "campaigns": [
+      {"id": "120208756463180774", "name": "DACH | Scaling | A+SC", "spend": 19119.27},
+      {"id": "120246201644110774", "name": "Mid-Season Sale 2026 - DACH - A+", "spend": 7611.09},
+      {"id": "23853854015530773", "name": "EU | Scaling | A+SC", "spend": 6006.39},
+      {"id": "120246217885220774", "name": "Mid-Season Sale 2026 - EU- A+", "spend": 3238.92},
+      {"id": "120243302861720774", "name": "UK | A+SC", "spend": 463.38},
+      {"id": "120233906545900774", "name": "Retargeting | Catalog | ABO", "spend": 247.96}
+    ]}
+  }
+}

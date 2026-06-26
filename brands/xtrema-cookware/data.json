@@ -1,27 +1,46 @@
 {
   "account": {
     "id": "act_1597243657678825",
-    "name": "Xtrema Cookware Official"
+    "name": "Xtrema Cookware"
   },
-  "generated_at": "2026-06-08T11:55:00Z",
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Vadym Tabenskiy",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "ROAS",
+    "target_value": 2.7,
+    "budget": 26000,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
   "date_range": {
-    "since": "2026-05-09",
-    "until": "2026-06-07",
-    "label": "Last 30 days"
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
   },
   "totals": {
+    "total_spend": 19767.57,
+    "total_revenue": 33589.11,
+    "total_purchases": 119,
+    "avg_cpa": 166.11,
+    "avg_roas": 1.6992,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
     "ad_count": 43,
-    "total_spend": 25750.05,
-    "total_impressions": 1084866,
-    "total_purchases": 155,
-    "total_revenue": 46757.38,
-    "avg_cpa": 166.13,
-    "avg_roas": 1.8158,
-    "test_count": 2,
-    "test_pct": 0.0465,
-    "blended_hook_rate": 0.1702,
-    "blended_hold_rate": 0.2891
+    "test_count": 0,
+    "test_pct": 0,
+    "total_spend_from_ads": 25750.05,
+    "total_purchases_from_ads": 155,
+    "total_revenue_from_ads": 46757.38,
+    "avg_cpa_from_ads": 166.13,
+    "avg_roas_from_ads": 1.8158
   },
+  "campaigns": [],
+  "campaign_count_total": 0,
+  "campaign_error": "permission denied (transient)",
   "ads": [
     {
       "ad_id": "120249036911170350",

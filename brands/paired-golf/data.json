@@ -1,0 +1,61 @@
+{
+  "account": {
+    "id": "act_687633323819441",
+    "name": "Paired Golf"
+  },
+  "meta": {
+    "tab": "leadgen",
+    "media_buyer": "Anastasiia Sintsova",
+    "pod_leader": "Anastasia Hryhorieva",
+    "target_type": "CPL",
+    "target_value": 10,
+    "budget": 5000,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 1918.08,
+    "total_revenue": 0,
+    "total_purchases": 8,
+    "avg_cpa": 239.76,
+    "avg_roas": 0.0,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120246506422360367",
+      "name": "PSP_B2B_Newsletter_ABO",
+      "spend": 862.54
+    },
+    {
+      "id": "120245713888750367",
+      "name": "RET_B2B_CallBookings_ABO",
+      "spend": 383.3
+    },
+    {
+      "id": "120245261437640367",
+      "name": "CT_Android_PSP_BidCap$8_FL,SC,GA_CBO",
+      "spend": 292.68
+    },
+    {
+      "id": "120245254985520367",
+      "name": "CT_Android_PSP_FL,SC,GA_CBO_Installs",
+      "spend": 195.1
+    }
+  ],
+  "campaign_count_total": 4,
+  "campaign_error": null,
+  "ads": []
+}

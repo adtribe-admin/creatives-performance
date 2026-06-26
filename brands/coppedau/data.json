@@ -1,0 +1,51 @@
+{
+  "account": {
+    "id": "act_1051064432272863",
+    "name": "Coppedau"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Roman Kisil",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "ROAS",
+    "target_value": 5,
+    "budget": 5000,
+    "currency": "AUD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 6610.16,
+    "total_revenue": 57972.08,
+    "total_purchases": 188,
+    "avg_cpa": 35.16,
+    "avg_roas": 8.7701,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120239428559280618",
+      "name": "Ai Ads + Catalogue",
+      "spend": 5440.44
+    },
+    {
+      "id": "120238226450470618",
+      "name": "Level 1 | Catalogue",
+      "spend": 2050.59
+    }
+  ],
+  "campaign_count_total": 2,
+  "campaign_error": null,
+  "ads": []
+}

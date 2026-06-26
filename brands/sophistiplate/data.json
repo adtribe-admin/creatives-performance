@@ -1,0 +1,71 @@
+{
+  "account": {
+    "id": "act_10150498913280867",
+    "name": "Sophistiplate"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Anastasiia Sintsova",
+    "pod_leader": "Anastasia Hryhorieva",
+    "target_type": "ROAS",
+    "target_value": 2.5,
+    "budget": 47300,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 37482.18,
+    "total_revenue": 90749.6,
+    "total_purchases": 1073,
+    "avg_cpa": 34.93,
+    "avg_roas": 2.4211,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "6930257143294",
+      "name": "CE_7dc1de_US_CBO_TOF+MOF_Sophistiplate_Seasonal_20260529",
+      "spend": 12788.34
+    },
+    {
+      "id": "6542929634294",
+      "name": "CE_US_MOF+BOF_ABO_Catalog_20260216",
+      "spend": 8057.4
+    },
+    {
+      "id": "6941096528694",
+      "name": "CE_7dc1de_US_CBO_TOF+MOF_Sophistiplate_Evergreen_20260529",
+      "spend": 6454.74
+    },
+    {
+      "id": "6873474420094",
+      "name": "CE_US_CBO_TOF+MOF_Sophistiplate_Evergreen_02242026",
+      "spend": 5732.56
+    },
+    {
+      "id": "6919434762294",
+      "name": "CE_US_CBO_TOF+MOF_Boards_Evergreen_18052026",
+      "spend": 5038.5
+    },
+    {
+      "id": "6955449199294",
+      "name": "CE_7dc1de_US_CBO_TOF+MOF_Boards_Evergreen_18052026",
+      "spend": 1192.46
+    }
+  ],
+  "campaign_count_total": 6,
+  "campaign_error": null,
+  "ads": []
+}

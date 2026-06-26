@@ -1,0 +1,61 @@
+{
+  "account": {
+    "id": "act_1596444150772177",
+    "name": "Cherieattire"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Iryna Dmytruk",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "ROAS",
+    "target_value": 3,
+    "budget": 8000,
+    "currency": "THB"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 225992.33,
+    "total_revenue": 838025.97,
+    "total_purchases": 64,
+    "avg_cpa": 3531.13,
+    "avg_roas": 3.7082,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120239138316520413",
+      "name": "US/AU | Prospecting | Conversions",
+      "spend": 162221.37
+    },
+    {
+      "id": "120238899887740413",
+      "name": "US/AU | RM | Conversions",
+      "spend": 45163.03
+    },
+    {
+      "id": "120245063568930413",
+      "name": "UK/CA | Prospecting | Conversions",
+      "spend": 23174.36
+    },
+    {
+      "id": "120245531125490413",
+      "name": "UK/CA/US/AU Engagement",
+      "spend": 6638.11
+    }
+  ],
+  "campaign_count_total": 4,
+  "campaign_error": null,
+  "ads": []
+}

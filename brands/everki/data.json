@@ -1,0 +1,66 @@
+{
+  "account": {
+    "id": "act_609932692840832",
+    "name": "Everki"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Sidarovych Kanstantsin",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "ROAS",
+    "target_value": 4,
+    "budget": 4000,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 4917.59,
+    "total_revenue": 12046.57,
+    "total_purchases": 63,
+    "avg_cpa": 78.06,
+    "avg_roas": 2.4497,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120243650179720481",
+      "name": "mmg-Everki-sales-prospecting-creative testing",
+      "spend": 3766.37
+    },
+    {
+      "id": "120247488163180481",
+      "name": "mmg-Everki-sales-prospecting-catalog",
+      "spend": 738.3
+    },
+    {
+      "id": "120245160246560481",
+      "name": "mmg-Everki-sales-retargeting",
+      "spend": 676.85
+    },
+    {
+      "id": "120236902923760481",
+      "name": "Everki-awareness-boosted posts",
+      "spend": 92.32
+    },
+    {
+      "id": "120249266698580481",
+      "name": "mmg-Everki-prime day 2026",
+      "spend": 92.18
+    }
+  ],
+  "campaign_count_total": 5,
+  "campaign_error": null,
+  "ads": []
+}

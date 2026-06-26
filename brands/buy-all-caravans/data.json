@@ -1,0 +1,61 @@
+{
+  "account": {
+    "id": "act_234278195398675",
+    "name": "Buy All Caravans"
+  },
+  "meta": {
+    "tab": "leadgen",
+    "media_buyer": "Vadym Tabenskiy",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "CPL",
+    "target_value": 30,
+    "budget": 13300,
+    "currency": "GBP"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 9752.77,
+    "total_revenue": 0,
+    "total_purchases": 1344,
+    "avg_cpa": 7.26,
+    "avg_roas": 0.0,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120244579499840311",
+      "name": "Prospecting | ABO | Caravans & Motorhomes",
+      "spend": 5653.92
+    },
+    {
+      "id": "120218693414240311",
+      "name": "New Leads campaign-too many statics",
+      "spend": 1781.44
+    },
+    {
+      "id": "120215014884700311",
+      "name": "New Leads campaign-current",
+      "spend": 1488.43
+    },
+    {
+      "id": "120241125451510311",
+      "name": "Motorhome Buying | Grand Slam Offer Test",
+      "spend": 1486.61
+    }
+  ],
+  "campaign_count_total": 4,
+  "campaign_error": null,
+  "ads": []
+}

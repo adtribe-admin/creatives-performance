@@ -1,0 +1,51 @@
+{
+  "account": {
+    "id": "act_2728439463932325",
+    "name": "KnewHealth"
+  },
+  "meta": {
+    "tab": "leadgen",
+    "media_buyer": "Dariy Prytula",
+    "pod_leader": "Anastasia Hryhorieva",
+    "target_type": "CPA",
+    "target_value": 1000,
+    "budget": 7500,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 6622.46,
+    "total_revenue": 0,
+    "total_purchases": 27,
+    "avg_cpa": 245.28,
+    "avg_roas": 0.0,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120231495629730355",
+      "name": "KH_Facebook_Leads_Prospecting",
+      "spend": 5763.2
+    },
+    {
+      "id": "120216286350470355",
+      "name": "KH_Facebook_Leads_Remarketing",
+      "spend": 1469.5
+    }
+  ],
+  "campaign_count_total": 2,
+  "campaign_error": null,
+  "ads": []
+}

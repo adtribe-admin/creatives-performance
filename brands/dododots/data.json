@@ -1,0 +1,66 @@
+{
+  "account": {
+    "id": "act_1210337971178943",
+    "name": "Dododots"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Vadym Tabenskiy",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "ROAS",
+    "target_value": 4,
+    "budget": 3000,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 41193.42,
+    "total_revenue": 233260.63,
+    "total_purchases": 767,
+    "avg_cpa": 53.71,
+    "avg_roas": 5.6626,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "52517144762154",
+      "name": "Prospecting | ASC+",
+      "spend": 509.23
+    },
+    {
+      "id": "6985359577950",
+      "name": "US - Test - 7/5/2026",
+      "spend": 472.22
+    },
+    {
+      "id": "6949988556750",
+      "name": "US - TF - AMZ - 3/3/2026",
+      "spend": 353.31
+    },
+    {
+      "id": "52530441890354",
+      "name": "Retargeting | CBO+",
+      "spend": 30.23
+    },
+    {
+      "id": "6953350353150",
+      "name": "US - Conv - ATC - Video - UGC (Caucasian)",
+      "spend": 24.67
+    }
+  ],
+  "campaign_count_total": 5,
+  "campaign_error": null,
+  "ads": []
+}

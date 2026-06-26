@@ -1,0 +1,46 @@
+{
+  "account": {
+    "id": "act_710366211364044",
+    "name": "IV drips"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Alexandra Bek",
+    "pod_leader": "Anastasia Hryhorieva",
+    "target_type": "CPL",
+    "target_value": 280,
+    "budget": 2000,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 1058.59,
+    "total_revenue": 0,
+    "total_purchases": 4,
+    "avg_cpa": 264.65,
+    "avg_roas": 0.0,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120241693251680454",
+      "name": "USA | Remarketing | Home page",
+      "spend": 1212.0
+    }
+  ],
+  "campaign_count_total": 1,
+  "campaign_error": null,
+  "ads": []
+}

@@ -1,0 +1,51 @@
+{
+  "account": {
+    "id": "act_906109421675456",
+    "name": "Pet Supplies"
+  },
+  "meta": {
+    "tab": "leadgen",
+    "media_buyer": "Roman Kisil",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "ROAS",
+    "target_value": 3,
+    "budget": 26500,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 69386.92,
+    "total_revenue": 187798.12,
+    "total_purchases": 3002,
+    "avg_cpa": 23.11,
+    "avg_roas": 2.7065,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120227846028000650",
+      "name": "Conquesting",
+      "spend": 37136.31
+    },
+    {
+      "id": "120243255484120650",
+      "name": "Prospecting Sales Campaign | ADV+",
+      "spend": 32715.54
+    }
+  ],
+  "campaign_count_total": 2,
+  "campaign_error": null,
+  "ads": []
+}

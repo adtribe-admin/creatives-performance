@@ -1,0 +1,46 @@
+{
+  "account": {
+    "id": "act_3319577708340387",
+    "name": "BrooklynMade"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Roman Kisil",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "ROAS",
+    "target_value": 2,
+    "budget": 3000,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 41193.42,
+    "total_revenue": 233260.63,
+    "total_purchases": 767,
+    "avg_cpa": 53.71,
+    "avg_roas": 5.6626,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120236942167280498",
+      "name": "USA | Prospecting | ABO",
+      "spend": 4814.51
+    }
+  ],
+  "campaign_count_total": 1,
+  "campaign_error": null,
+  "ads": []
+}

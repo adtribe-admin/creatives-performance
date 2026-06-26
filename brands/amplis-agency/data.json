@@ -1,0 +1,48 @@
+{
+  "account": {
+    "id": "act_1160864529545071",
+    "name": "Amplis Agency"
+  },
+  "meta": {
+    "tab": "leadgen",
+    "media_buyer": "Dariy Prytula",
+    "pod_leader": "Anastasia Hryhorieva",
+    "target_type": "CPL",
+    "target_value": 450,
+    "budget": 500,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 0,
+    "total_revenue": 0,
+    "total_purchases": 0,
+    "avg_cpa": 0,
+    "avg_roas": 0,
+    "perf_weeks_used": 0,
+    "perf_window": null,
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "52587702174868",
+      "name": "AMPLIS - Traffic",
+      "spend": 394.62
+    },
+    {
+      "id": "52598645078068",
+      "name": "Amplis - Dart Campaign - Email ALL",
+      "spend": 23.03
+    }
+  ],
+  "campaign_count_total": 2,
+  "campaign_error": null,
+  "ads": []
+}

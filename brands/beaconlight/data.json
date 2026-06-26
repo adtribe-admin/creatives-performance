@@ -1,0 +1,51 @@
+{
+  "account": {
+    "id": "act_862675702575747",
+    "name": "BeaconLight"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Anastasiia Sintsova",
+    "pod_leader": "Anastasia Hryhorieva",
+    "target_type": "CPA",
+    "target_value": 500,
+    "budget": 4500,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 3467.81,
+    "total_revenue": 3524.05,
+    "total_purchases": 4,
+    "avg_cpa": 866.95,
+    "avg_roas": 1.0162,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120250498097780404",
+      "name": "New website | PSP | Adv+",
+      "spend": 3349.9
+    },
+    {
+      "id": "120244807726760404",
+      "name": "Prospecting | Conversions | CBO | Families",
+      "spend": 594.89
+    }
+  ],
+  "campaign_count_total": 2,
+  "campaign_error": null,
+  "ads": []
+}

@@ -3,25 +3,73 @@
     "id": "act_1939402463050546",
     "name": "Slumberkins"
   },
-  "generated_at": "2026-06-08T11:55:00Z",
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Anastasiia Sintsova",
+    "pod_leader": "Anastasia Hryhorieva",
+    "target_type": "ROAS",
+    "target_value": 5,
+    "budget": 12000,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
   "date_range": {
     "since": "2026-05-09",
     "until": "2026-06-07",
     "label": "Last 30 days"
   },
   "totals": {
+    "total_spend": 6716.73,
+    "total_revenue": 54877.2,
+    "total_purchases": 154,
+    "avg_cpa": 43.62,
+    "avg_roas": 8.1702,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
     "ad_count": 46,
-    "total_spend": 7132.19,
+    "total_spend_from_ads": 7132.19,
     "total_impressions": 467921,
-    "total_purchases": 239,
-    "total_revenue": 61358.91,
-    "avg_cpa": 29.84,
-    "avg_roas": 8.6031,
+    "total_purchases_from_ads": 239,
+    "total_revenue_from_ads": 61358.91,
+    "avg_cpa_from_ads": 29.84,
+    "avg_roas_from_ads": 8.6031,
     "test_count": 1,
     "test_pct": 0.0217,
     "blended_hook_rate": 0.1519,
     "blended_hold_rate": 0.7849
   },
+  "campaigns": [
+    {
+      "id": "120235968232540256",
+      "name": "PH | PRS | Creature Full of Feelings",
+      "spend": 2946.26
+    },
+    {
+      "id": "120244725358790256",
+      "name": "PRS | Flip Out Testing",
+      "spend": 2701.56
+    },
+    {
+      "id": "120244149688310256",
+      "name": "PRS | Mixed Creatures Testing",
+      "spend": 1126.59
+    },
+    {
+      "id": "120231573215710256",
+      "name": "PH | RTG | August 19, 2025",
+      "spend": 629.68
+    },
+    {
+      "id": "120246125603750256",
+      "name": "PRS | Unicorn Testing",
+      "spend": 283.77
+    }
+  ],
+  "campaign_count_total": 5,
+  "campaign_error": null,
   "ads": [
     {
       "ad_id": "120244725413400256",

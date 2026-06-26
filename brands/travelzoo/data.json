@@ -1,0 +1,66 @@
+{
+  "account": {
+    "id": "act_1306820756885120",
+    "name": "Travelzoo"
+  },
+  "meta": {
+    "tab": "leadgen",
+    "media_buyer": "Alina Zherebetska",
+    "pod_leader": "Anastasia Hryhorieva",
+    "target_type": "CPL",
+    "target_value": 7.99,
+    "budget": null,
+    "currency": "AUD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 45015.67,
+    "total_revenue": 0,
+    "total_purchases": 14892,
+    "avg_cpa": 3.02,
+    "avg_roas": 0.0,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120242578372440041",
+      "name": "Evergreen - 4th April",
+      "spend": 5991.43
+    },
+    {
+      "id": "120245243668980041",
+      "name": "67-nt Sydney to London 'Queen Anne' Package",
+      "spend": 5638.92
+    },
+    {
+      "id": "120241947404840041",
+      "name": "Evergreen - 26th March",
+      "spend": 4481.64
+    },
+    {
+      "id": "120241438456880041",
+      "name": "Evergreen - 15th March",
+      "spend": 4394.01
+    },
+    {
+      "id": "120245431666750041",
+      "name": "7-nts in 5 Star Thailand Resort",
+      "spend": 4374.36
+    }
+  ],
+  "campaign_count_total": 5,
+  "campaign_error": null,
+  "ads": []
+}

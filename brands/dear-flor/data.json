@@ -1,0 +1,56 @@
+{
+  "account": {
+    "id": "act_439344025853640",
+    "name": "Dear Flor"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Roman Kisil",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "ROAS",
+    "target_value": 2.5,
+    "budget": 4500,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 5729.03,
+    "total_revenue": 12219.55,
+    "total_purchases": 225,
+    "avg_cpa": 25.46,
+    "avg_roas": 2.1329,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120224831130830520",
+      "name": "SLTC | Prospecting | Conversion",
+      "spend": 4670.64
+    },
+    {
+      "id": "120226051899710520",
+      "name": "SLTC | Retargeting | Warm Audiences | Conversion",
+      "spend": 724.05
+    },
+    {
+      "id": "120246700245120520",
+      "name": "SLTC | Awareness",
+      "spend": 440.41
+    }
+  ],
+  "campaign_count_total": 3,
+  "campaign_error": null,
+  "ads": []
+}

@@ -1,0 +1,56 @@
+{
+  "account": {
+    "id": "act_2101793839942342",
+    "name": "Photobrick"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Alina Zherebetska",
+    "pod_leader": "Anastasia Hryhorieva",
+    "target_type": "ROAS",
+    "target_value": 2,
+    "budget": 3000,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 4939.19,
+    "total_revenue": 30245.96,
+    "total_purchases": 189,
+    "avg_cpa": 26.13,
+    "avg_roas": 6.1237,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120238212431750284",
+      "name": "AU | Website Conversions",
+      "spend": 1124.19
+    },
+    {
+      "id": "120243392168250284",
+      "name": "SA | Website Conversions",
+      "spend": 615.31
+    },
+    {
+      "id": "120238213221760284",
+      "name": "UAE | Website Conversions",
+      "spend": 378.44
+    }
+  ],
+  "campaign_count_total": 3,
+  "campaign_error": null,
+  "ads": []
+}

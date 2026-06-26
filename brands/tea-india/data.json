@@ -1,0 +1,61 @@
+{
+  "account": {
+    "id": "act_339455921231910",
+    "name": "Tea India"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Sidarovych Kanstantsin",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "ROAS",
+    "target_value": 4,
+    "budget": 6000,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 2801.79,
+    "total_revenue": 1954.53,
+    "total_purchases": 77,
+    "avg_cpa": 36.39,
+    "avg_roas": 0.6976,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120243984297120647",
+      "name": "mmg-tea india-sales-retargeting",
+      "spend": 1412.75
+    },
+    {
+      "id": "120243984120450647",
+      "name": "mmg-tea india-prospecting-creative testing",
+      "spend": 1330.64
+    },
+    {
+      "id": "120242654640820647",
+      "name": "tea india-awareness-daily budget",
+      "spend": 166.56
+    },
+    {
+      "id": "120247725929530647",
+      "name": "mmg-tea india-sales-prime day 2026",
+      "spend": 138.8
+    }
+  ],
+  "campaign_count_total": 4,
+  "campaign_error": null,
+  "ads": []
+}

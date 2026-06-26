@@ -1,0 +1,56 @@
+{
+  "account": {
+    "id": "act_834839459305344",
+    "name": "Dentite"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Roman Kisil",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "ROAS",
+    "target_value": 2,
+    "budget": 32000,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 15539.29,
+    "total_revenue": 12824.23,
+    "total_purchases": 128,
+    "avg_cpa": 121.4,
+    "avg_roas": 0.8253,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120246424224460131",
+      "name": "Dentite | A+ | 2026 Campaign",
+      "spend": 11500.45
+    },
+    {
+      "id": "120248779424860131",
+      "name": "Dentite | Remarketing",
+      "spend": 3880.86
+    },
+    {
+      "id": "120241721362480131",
+      "name": "Dentite | A+ | TOF | BOGO | USA | MF Pixel | DO AC | 15.01.",
+      "spend": 496.15
+    }
+  ],
+  "campaign_count_total": 3,
+  "campaign_error": null,
+  "ads": []
+}

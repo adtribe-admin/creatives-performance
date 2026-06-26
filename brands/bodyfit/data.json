@@ -1,0 +1,46 @@
+{
+  "account": {
+    "id": "act_1106229700657129",
+    "name": "Bodyfit"
+  },
+  "meta": {
+    "tab": "leadgen",
+    "media_buyer": "Roman Kisil",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "CPL",
+    "target_value": 50,
+    "budget": 12400,
+    "currency": "AUD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 11429.69,
+    "total_revenue": 0,
+    "total_purchases": 402,
+    "avg_cpa": 28.43,
+    "avg_roas": 0.0,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120210906869840332",
+      "name": "LEADS",
+      "spend": 12238.19
+    }
+  ],
+  "campaign_count_total": 1,
+  "campaign_error": null,
+  "ads": []
+}

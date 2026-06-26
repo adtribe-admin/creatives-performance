@@ -1,0 +1,71 @@
+{
+  "account": {
+    "id": "act_10207584714042283",
+    "name": "Yahmo"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Anastasia Hryhorieva",
+    "pod_leader": "Anastasia Hryhorieva",
+    "target_type": "ROAS",
+    "target_value": 3,
+    "budget": 30000,
+    "currency": "EUR"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 36647.47,
+    "total_revenue": 154899.84,
+    "total_purchases": 884,
+    "avg_cpa": 41.46,
+    "avg_roas": 4.2268,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120208756463180774",
+      "name": "DACH | Scaling | A+SC",
+      "spend": 19119.27
+    },
+    {
+      "id": "120246201644110774",
+      "name": "Mid-Season Sale 2026 - DACH - A+",
+      "spend": 7611.09
+    },
+    {
+      "id": "23853854015530773",
+      "name": "EU | Scaling | A+SC",
+      "spend": 6006.39
+    },
+    {
+      "id": "120246217885220774",
+      "name": "Mid-Season Sale 2026 - EU- A+",
+      "spend": 3238.92
+    },
+    {
+      "id": "120243302861720774",
+      "name": "UK | A+SC",
+      "spend": 463.38
+    },
+    {
+      "id": "120233906545900774",
+      "name": "Retargeting | Catalog | ABO",
+      "spend": 247.96
+    }
+  ],
+  "campaign_count_total": 6,
+  "campaign_error": null,
+  "ads": []
+}

@@ -1,0 +1,61 @@
+{
+  "account": {
+    "id": "act_441101408140438",
+    "name": "Cameron Hanes"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Dariy Prytula",
+    "pod_leader": "Anastasia Hryhorieva",
+    "target_type": "ROAS",
+    "target_value": 2,
+    "budget": 50000,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 50162.71,
+    "total_revenue": 124859.72,
+    "total_purchases": 1819,
+    "avg_cpa": 27.58,
+    "avg_roas": 2.4891,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120215398350520348",
+      "name": "CE_US_TOF_ABO_ASC_20250401",
+      "spend": 22764.22
+    },
+    {
+      "id": "120251149922270348",
+      "name": "CE_US_CBO_ASC_2026BentleyGiveaway_20260520",
+      "spend": 17292.29
+    },
+    {
+      "id": "120232027180000348",
+      "name": "CE_US_TOF_CBO_Catalog_20250610",
+      "spend": 13287.21
+    },
+    {
+      "id": "120252345513870348",
+      "name": "CE_US_CBO_ASC_2026RolexGiveaway_20260610",
+      "spend": 3133.6
+    }
+  ],
+  "campaign_count_total": 4,
+  "campaign_error": null,
+  "ads": []
+}

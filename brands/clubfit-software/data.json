@@ -1,0 +1,51 @@
+{
+  "account": {
+    "id": "act_739503613264875",
+    "name": "Clubfit Software"
+  },
+  "meta": {
+    "tab": "leadgen",
+    "media_buyer": "Anastasiia Sintsova",
+    "pod_leader": "Anastasia Hryhorieva",
+    "target_type": "CPL",
+    "target_value": 80,
+    "budget": 1500,
+    "currency": "AUD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 1256.9,
+    "total_revenue": 0,
+    "total_purchases": 34,
+    "avg_cpa": 36.97,
+    "avg_roas": 0.0,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120202388369030210",
+      "name": "Level 1 | A+ Shopping | Cold Prospecting | Conv | Cost cap CBO",
+      "spend": 1193.7
+    },
+    {
+      "id": "120215402008920210",
+      "name": "Level 2 | Reprospecting audience | Purchase goal test",
+      "spend": 150.42
+    }
+  ],
+  "campaign_count_total": 2,
+  "campaign_error": null,
+  "ads": []
+}

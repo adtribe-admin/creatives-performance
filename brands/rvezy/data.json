@@ -1,0 +1,66 @@
+{
+  "account": {
+    "id": "act_10911447",
+    "name": "Rvezy"
+  },
+  "meta": {
+    "tab": "leadgen",
+    "media_buyer": "Vadym Tabenskiy",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "CPL",
+    "target_value": 300,
+    "budget": 100000,
+    "currency": "CAD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 83817.94,
+    "total_revenue": 1060142.66,
+    "total_purchases": 752,
+    "avg_cpa": 111.46,
+    "avg_roas": 12.6482,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "6911782220862",
+      "name": "FACEBOOK+CAN+Owner+National",
+      "spend": 55705.08
+    },
+    {
+      "id": "6868593589662",
+      "name": "FACEBOOK+CAN+Owner+4-Locations+2026",
+      "spend": 16302.49
+    },
+    {
+      "id": "6944567544462",
+      "name": "FACEBOOK+CAN+Renter+Prospecting+Conv+June-2026",
+      "spend": 9144.92
+    },
+    {
+      "id": "6856071894462",
+      "name": "FACEBOOK+CAN+Renter+Retargeting+Sales+May+2025",
+      "spend": 5977.82
+    },
+    {
+      "id": "6553447348262",
+      "name": "FACEBOOK+CAn+Renter+APP+iOS14+Prospecting-Jan2026",
+      "spend": 3009.69
+    }
+  ],
+  "campaign_count_total": 5,
+  "campaign_error": null,
+  "ads": []
+}

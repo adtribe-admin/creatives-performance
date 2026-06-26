@@ -1,0 +1,51 @@
+{
+  "account": {
+    "id": "act_485500910785479",
+    "name": "Westminsters metals"
+  },
+  "meta": {
+    "tab": "ecom",
+    "media_buyer": "Vadym Tabenskiy",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "ROAS",
+    "target_value": 5,
+    "budget": 3500,
+    "currency": "USD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 1478.92,
+    "total_revenue": 1995,
+    "total_purchases": 1,
+    "avg_cpa": 1478.92,
+    "avg_roas": 1.349,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120242811386350043",
+      "name": "Prospecting",
+      "spend": 1518.85
+    },
+    {
+      "id": "120247924082330043",
+      "name": "Prospecting | 1g Valcambi Gold Bar + 2026 $5 Gold Eagle",
+      "spend": 271.52
+    }
+  ],
+  "campaign_count_total": 2,
+  "campaign_error": null,
+  "ads": []
+}

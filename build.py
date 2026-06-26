@@ -27,16 +27,28 @@ BRANDS = []
 for bf in sorted(BRANDS_DIR.glob("*/data.json")):
     d = json.loads(bf.read_text())
     slug = bf.parent.name
-    for a in d["ads"]:
+    ads = d.get("ads") or []
+    for a in ads:
         a["_brand_slug"] = slug
         a["_brand_name"] = d["account"]["name"]
     BRANDS.append({
         "slug": slug,
         "account": d["account"],
-        "date_range": d["date_range"],
+        "meta": d.get("meta") or {},
+        "date_range": d.get("date_range") or {"label": "Last 30 days"},
         "generated_at": d.get("generated_at"),
-        "ads": d["ads"],
+        "totals": d.get("totals") or {},
+        "campaigns": d.get("campaigns") or [],
+        "campaign_count_total": d.get("campaign_count_total", 0),
+        "campaign_error": d.get("campaign_error"),
+        "ads": ads,
     })
+
+# Sort brands by spend descending (most active first)
+def _brand_spend(b):
+    t = b["totals"]
+    return t.get("total_spend_from_ads", 0) or t.get("total_spend", 0) or 0
+BRANDS.sort(key=_brand_spend, reverse=True)
 
 ALL_ADS = [a for b in BRANDS for a in b["ads"]]
 
@@ -96,9 +108,34 @@ def totals_for(ads):
     }
 
 
-AGG = totals_for(ALL_ADS)
+AGG_ADS = totals_for(ALL_ADS)
+# Agency-wide aggregate also rolls in brand-level totals from perf rollups for brands without ads
+AGG = {
+    **AGG_ADS,
+    "total_spend": sum(b["totals"].get("total_spend", 0) or 0 for b in BRANDS),
+    "total_revenue": sum(b["totals"].get("total_revenue", 0) or 0 for b in BRANDS),
+    "total_purchases": sum(b["totals"].get("total_purchases", 0) or 0 for b in BRANDS),
+}
+AGG["avg_cpa"] = (AGG["total_spend"] / AGG["total_purchases"]) if AGG["total_purchases"] else 0
+AGG["avg_roas"] = (AGG["total_revenue"] / AGG["total_spend"]) if AGG["total_spend"] else 0
+
+# Per-brand agg: use ad-level if available, else fall back to perf-rollup totals
 for b in BRANDS:
-    b["agg"] = totals_for(b["ads"])
+    if b["ads"]:
+        b["agg"] = totals_for(b["ads"])
+    else:
+        t = b["totals"]
+        b["agg"] = {
+            "ad_count": 0,
+            "total_spend": t.get("total_spend", 0) or 0,
+            "total_impressions": 0,
+            "total_purchases": t.get("total_purchases", 0) or 0,
+            "total_revenue": t.get("total_revenue", 0) or 0,
+            "avg_cpa": t.get("avg_cpa", 0) or 0,
+            "avg_roas": t.get("avg_roas", 0) or 0,
+            "test_count": 0,
+            "test_pct": 0,
+        }
 
 
 # ---- ROAS color helpers ----
@@ -398,32 +435,118 @@ def render_all_brands_tab():
     """
 
 
+def render_brand_meta_banner(b):
+    m = b.get("meta") or {}
+    if not any(m.values()):
+        return ""
+    bits = []
+    if m.get("media_buyer"):
+        bits.append(f'<span><strong>Media buyer:</strong> {html.escape(m["media_buyer"])}</span>')
+    if m.get("pod_leader"):
+        bits.append(f'<span><strong>POD lead:</strong> {html.escape(m["pod_leader"])}</span>')
+    if m.get("tab"):
+        bits.append(f'<span><strong>Type:</strong> {html.escape(m["tab"])}</span>')
+    if m.get("target_type") and m.get("target_value"):
+        bits.append(f'<span><strong>Target:</strong> {html.escape(m["target_type"])} {m["target_value"]}</span>')
+    if m.get("budget"):
+        bits.append(f'<span><strong>Budget:</strong> ${m["budget"]:,}/mo</span>')
+    return f'<div class="brand-banner">{" · ".join(bits)}</div>'
+
+
+def render_campaigns_table(campaigns, table_id, total_count):
+    if not campaigns:
+        return '<div class="empty-note" style="padding: 24px;">No campaigns delivered in window.</div>'
+    rows = []
+    for c in campaigns:
+        rows.append(f"""
+        <tr>
+          <td>{html.escape(c.get('name') or '')}</td>
+          <td>{usd(c.get('spend', 0))}</td>
+        </tr>
+        """)
+    note = ""
+    if total_count > len(campaigns):
+        note = f' <span class="muted">(top {len(campaigns)} of {total_count})</span>'
+    return f"""
+    <div class="scroll">
+      <table id="{table_id}" class="campaigns-table">
+        <thead><tr><th>Campaign{note}</th><th>30d spend</th></tr></thead>
+        <tbody>{"".join(rows)}</tbody>
+      </table>
+    </div>
+    """
+
+
 def render_brand_tab(b):
+    has_ads = bool(b["ads"])
+    meta_banner = render_brand_meta_banner(b)
+    if has_ads:
+        kpis = kpi_row(b['agg'], f"{b['date_range']['label']} · {b['account']['id']}")
+        body = f"""
+        <div class="panel">
+          <div class="panel-h">
+            <h2>All creatives</h2>
+            <span class="note">click a column header to sort</span>
+          </div>
+          <div class="toolbar">
+            <input type="search" class="search-input" data-target="table-{b['slug']}" placeholder="Filter by ad name, creative name, campaign…" />
+            <span class="count" data-count-for="table-{b['slug']}">{len(b['ads'])} creatives</span>
+          </div>
+          {render_ads_table(b['ads'], f"table-{b['slug']}", show_brand=False)}
+        </div>
+        {render_top_panels(b['ads'], show_brand=False)}
+        {render_dq(b['ads'])}
+        """
+    else:
+        # KPI row from perf totals (no ad_count/test_count/hook/hold)
+        t = b["totals"]
+        kpis = "\n".join([
+            kpi_card("Total spend", usd(t.get("total_spend", 0)), meta=b['date_range']['label']),
+            kpi_card("Purchases / conversions", intf(t.get("total_purchases", 0)), meta=f"from {t.get('perf_weeks_used', 0)}-week rollup"),
+            kpi_card("Revenue", usd(t.get("total_revenue", 0))),
+            kpi_card("Avg CPA", usd(t.get("avg_cpa", 0))),
+            kpi_card("Avg ROAS", f"{num(t.get('avg_roas', 0), 2)}x", meta="spend-weighted", accent=t.get("avg_roas", 0) >= 2.0),
+        ])
+        body = f"""
+        <div class="panel">
+          <div class="panel-h">
+            <h2>Campaigns</h2>
+            <span class="note">last 30 days · {b['campaign_count_total']} total</span>
+          </div>
+          {render_campaigns_table(b['campaigns'], f"table-{b['slug']}", b['campaign_count_total'])}
+        </div>
+        <div class="panel">
+          <div class="panel-h"><h2>Per-creative data</h2><span class="note">pending</span></div>
+          <div class="empty-note" style="padding: 24px;">
+            Per-ad creative metrics (thumbnails, hook/hold rate, test status) populate via the scheduled Monday refresh agent.
+            Once that runs, this brand will show the same creative table as Slumberkins / Xtrema.
+          </div>
+        </div>
+        """
     return f"""
     <div class="tab-panel" id="tab-{b['slug']}">
-      <div class="kpis">{kpi_row(b['agg'], f"{b['date_range']['label']} · {b['account']['id']}")}</div>
-      <div class="panel">
-        <div class="panel-h">
-          <h2>All creatives</h2>
-          <span class="note">click a column header to sort</span>
-        </div>
-        <div class="toolbar">
-          <input type="search" class="search-input" data-target="table-{b['slug']}" placeholder="Filter by ad name, creative name, campaign…" />
-          <span class="count" data-count-for="table-{b['slug']}">{len(b['ads'])} creatives</span>
-        </div>
-        {render_ads_table(b['ads'], f"table-{b['slug']}", show_brand=False)}
-      </div>
-      {render_top_panels(b['ads'], show_brand=False)}
-      {render_dq(b['ads'])}
+      {meta_banner}
+      <div class="kpis">{kpis}</div>
+      {body}
     </div>
     """
 
 
 # ---- Tab strip ----
+def _tab_badge_text(b):
+    """Show ad count if available, else spend (in $k)."""
+    if b["ads"]:
+        return intf(len(b["ads"]))
+    s = b["agg"].get("total_spend", 0) or 0
+    if s >= 1000:
+        return f"${s/1000:.0f}k"
+    return f"${s:.0f}"
+
+
 def render_tab_strip():
     tabs = [('all', 'All brands', f'{len(BRANDS)}', True)]
     for b in BRANDS:
-        tabs.append((b["slug"], b["account"]["name"], intf(b["agg"]["ad_count"]), False))
+        tabs.append((b["slug"], b["account"]["name"], _tab_badge_text(b), False))
     return "\n".join(
         f'<button class="tab{" active" if active else ""}" data-tab="{slug}">{html.escape(label)} <span class="tab-badge">{count}</span></button>'
         for slug, label, count, active in tabs
@@ -625,6 +748,27 @@ HTML = f"""<!DOCTYPE html>
   .empty-note {{ color: var(--muted-2); font-style: italic; padding: 10px 4px; }}
 
   footer {{ margin-top: 32px; color: var(--muted-2); font-size: 12px; }}
+
+  /* Brand info banner */
+  .brand-banner {{
+    background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px;
+    padding: 10px 14px; font-size: 12px; color: var(--muted);
+    display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 16px;
+  }}
+  .brand-banner strong {{ color: var(--text); font-weight: 500; }}
+
+  /* Campaigns table */
+  table.campaigns-table {{ width: 100%; border-collapse: collapse; }}
+  table.campaigns-table th, table.campaigns-table td {{
+    padding: 10px 14px; text-align: right; font-variant-numeric: tabular-nums; font-size: 13px;
+  }}
+  table.campaigns-table th:first-child, table.campaigns-table td:first-child {{ text-align: left; }}
+  table.campaigns-table thead th {{
+    color: var(--muted); font-size: 10px; font-weight: 600; letter-spacing: 0.10em; text-transform: uppercase;
+    border-bottom: 1px solid var(--border); background: var(--panel-2);
+  }}
+  table.campaigns-table tbody tr {{ border-bottom: 1px solid var(--border); }}
+  table.campaigns-table tbody tr:hover td {{ background: rgba(108,47,206,0.06); }}
 
   /* Thumb button (clickable creative) */
   .thumb-btn {{

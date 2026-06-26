@@ -1,0 +1,71 @@
+{
+  "account": {
+    "id": "act_1271180020035555",
+    "name": "Beautifi"
+  },
+  "meta": {
+    "tab": "leadgen",
+    "media_buyer": "Vadym Tabenskiy",
+    "pod_leader": "Diana Yaryha",
+    "target_type": "CPL",
+    "target_value": 50,
+    "budget": 15000,
+    "currency": "CAD"
+  },
+  "generated_at": "2026-06-26T16:15:00Z",
+  "date_range": {
+    "since": "2026-05-27",
+    "until": "2026-06-25",
+    "label": "Last 30 days (campaign + last-4-weeks rollup)"
+  },
+  "totals": {
+    "total_spend": 14158.89,
+    "total_revenue": 0,
+    "total_purchases": 6,
+    "avg_cpa": 2359.82,
+    "avg_roas": 0.0,
+    "perf_weeks_used": 4,
+    "perf_window": {
+      "from": "2026-05-25",
+      "to_week_starting": "2026-06-15"
+    },
+    "ad_count": 0,
+    "test_count": 0,
+    "test_pct": 0
+  },
+  "campaigns": [
+    {
+      "id": "120240574479230604",
+      "name": "Prospecting | Ontario,Alberta,BC | Rhinoplasty/General/BA | Submit App | 02.2026",
+      "spend": 8096.14
+    },
+    {
+      "id": "120248152137870604",
+      "name": "Prospecting | ON,BC,AB | Multi-Procedure | Submit App | 06.2026",
+      "spend": 3774.27
+    },
+    {
+      "id": "120243112645860604",
+      "name": "Prospecting | Quebec | Rhinoplasty/General/BA | Qualified Lead | 03.2026",
+      "spend": 2196.02
+    },
+    {
+      "id": "120244503788650604",
+      "name": "Marketplace | Dr. Dreckmann | Richmond Hill | Meta | Approval | 04.2026",
+      "spend": 206.06
+    },
+    {
+      "id": "120243315513640604",
+      "name": "Marketplace | Dr. Sardiwalla | Alberta | Meta | Submit App | 04.2026",
+      "spend": 195.75
+    },
+    {
+      "id": "120222197802040604",
+      "name": "Rhinoplasty | Ontario | Meta | Submit App campaign",
+      "spend": 105.28
+    }
+  ],
+  "campaign_count_total": 6,
+  "campaign_error": null,
+  "ads": []
+}
