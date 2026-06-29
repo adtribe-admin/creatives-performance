@@ -849,9 +849,6 @@ HTML = f"""<!DOCTYPE html>
       <h1>Creatives <span class="accent">Performance</span></h1>
       <div class="sub">Multi-brand dashboard · {len(BRANDS)} brand{'s' if len(BRANDS) != 1 else ''} · generated {html.escape(generated)}</div>
     </div>
-    <div>
-      <span class="badge">Feasibility test · v2</span>
-    </div>
   </header>
 
   <div class="tabstrip" role="tablist">{render_tab_strip()}</div>
